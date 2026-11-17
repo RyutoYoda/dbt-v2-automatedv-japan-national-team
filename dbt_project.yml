@@ -12,6 +12,9 @@ target-path: "target"
 clean-targets: ["target", "dbt_packages"]
 
 models:
+  +persist_docs:
+    relation: true
+    columns: true
   dbt_v2_automatedv_japan_national_team:
     staging:
       +schema: STAGING
@@ -27,6 +30,9 @@ models:
       +materialized: table
 
 seeds:
+  +persist_docs:
+    relation: true
+    columns: true
   dbt_v2_automatedv_japan_national_team:
     +schema: RAW
     +quote_columns: false

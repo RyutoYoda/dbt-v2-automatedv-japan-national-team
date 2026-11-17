@@ -1,0 +1,466 @@
+version: 2
+
+models:
+  - name: v_stg_matches
+    description: "StatsBombの試合ソースを型変換し、Data Vault用のハッシュキーと変更検知値を付与するステージングビュー。1行は1試合。"
+    columns:
+      - name: match_id
+        description: "StatsBombの試合識別子。"
+      - name: season_name
+        description: "大会シーズン名。対象データは2022年。"
+      - name: match_date
+        description: "試合開催日。"
+      - name: competition_id
+        description: "StatsBombの大会識別子。"
+      - name: competition_name
+        description: "大会名。"
+      - name: home_team_id
+        description: "ホームチームのStatsBomb識別子。"
+      - name: home_team_name
+        description: "ホームチーム名。"
+      - name: home_score
+        description: "ホームチームの得点。"
+      - name: away_team_id
+        description: "アウェイチームのStatsBomb識別子。"
+      - name: away_team_name
+        description: "アウェイチーム名。"
+      - name: away_score
+        description: "アウェイチームの得点。"
+      - name: stage_name
+        description: "大会内の試合ステージ。"
+      - name: stadium_name
+        description: "試合会場名。"
+      - name: record_source
+        description: "レコードの取得元を示す識別子。"
+      - name: load_datetime
+        description: "ソース行を取り込んだ日時。"
+      - name: match_hk
+        description: "match_idから生成したMatch Hub用ハッシュキー。"
+      - name: competition_hk
+        description: "competition_idから生成したCompetition Hub用ハッシュキー。"
+      - name: home_team_hk
+        description: "home_team_idから生成したホームTeam Hub用ハッシュキー。"
+      - name: away_team_hk
+        description: "away_team_idから生成したアウェイTeam Hub用ハッシュキー。"
+      - name: match_hashdiff
+        description: "試合Satelliteの属性変更検知に使うハッシュ差分。"
+
+  - name: v_stg_lineups
+    description: "StatsBombの出場選手データを型変換し、選手・試合・チームのキーを付与するステージングビュー。1行は1選手の1試合出場記録。"
+    columns:
+      - name: match_id
+        description: "StatsBombの試合識別子。"
+      - name: team_id
+        description: "所属チームのStatsBomb識別子。"
+      - name: team_name
+        description: "所属チーム名。"
+      - name: player_id
+        description: "選手のStatsBomb識別子。"
+      - name: player_name
+        description: "ソース上の選手名。"
+      - name: jersey_number
+        description: "試合での背番号。"
+      - name: position_name
+        description: "出場時のポジション名。"
+      - name: is_starter
+        description: "先発出場ならtrue。"
+      - name: record_source
+        description: "レコードの取得元を示す識別子。"
+      - name: load_datetime
+        description: "ソース行を取り込んだ日時。"
+      - name: match_hk
+        description: "試合識別子から生成したMatch Hub用ハッシュキー。"
+      - name: team_hk
+        description: "チーム識別子から生成したTeam Hub用ハッシュキー。"
+      - name: player_source_hk
+        description: "StatsBomb選手識別子から生成したPlayer Source Hub用ハッシュキー。"
+      - name: player_hk
+        description: "名寄せ後の選手識別子から生成したPlayer Hub用ハッシュキー。"
+      - name: player_match_hk
+        description: "選手・試合・チームの組み合わせを表すLink用ハッシュキー。"
+      - name: lineup_hashdiff
+        description: "背番号・ポジション・先発区分の変更検知に使うハッシュ差分。"
+
+  - name: v_stg_players
+    description: "トレーニング用選手名寄せ表を整形し、StatsBomb選手IDと統合選手IDのハッシュキーを作るビュー。"
+    columns:
+      - name: player_source_id
+        description: "StatsBomb側の選手識別子。"
+      - name: training_registry_id
+        description: "演習用の選手台帳識別子。実在する公式IDではない。"
+      - name: master_player_id
+        description: "演習用に統合した選手識別子。"
+      - name: player_name
+        description: "名寄せ後に表示する選手名。"
+      - name: record_source
+        description: "名寄せレコードの取得元を示す識別子。"
+      - name: load_datetime
+        description: "レコードを取り込んだ日時。"
+      - name: player_source_hk
+        description: "StatsBomb選手識別子から生成したPlayer Source Hub用ハッシュキー。"
+      - name: player_hk
+        description: "統合選手識別子から生成したPlayer Hub用ハッシュキー。"
+      - name: same_as_player_hk
+        description: "統合選手とStatsBomb選手の対応を表すSame-as Link用ハッシュキー。"
+      - name: player_hashdiff
+        description: "選手名と演習用台帳IDの変更検知に使うハッシュ差分。"
+
+  - name: v_stg_shots
+    description: "StatsBombのシュートイベントを型変換し、イベントと関連する選手・試合・チームのキーを付与するビュー。"
+    columns:
+      - name: event_id
+        description: "StatsBombイベント識別子。"
+      - name: match_id
+        description: "イベントが発生した試合の識別子。"
+      - name: team_id
+        description: "シュートを行ったチームの識別子。"
+      - name: player_id
+        description: "シュートを行った選手のStatsBomb識別子。"
+      - name: period
+        description: "試合のピリオド番号。"
+      - name: minute
+        description: "イベント発生時の試合経過分。"
+      - name: second
+        description: "イベント発生時の分内秒。"
+      - name: event_timestamp
+        description: "イベント発生時刻のソース表現。"
+      - name: shot_type
+        description: "シュートの種類。"
+      - name: shot_outcome
+        description: "シュートの結果。"
+      - name: shot_xg
+        description: "StatsBombが提供するシュートの期待得点値。"
+      - name: record_source
+        description: "レコードの取得元を示す識別子。"
+      - name: load_datetime
+        description: "ソース行を取り込んだ日時。"
+      - name: match_hk
+        description: "試合識別子から生成したMatch Hub用ハッシュキー。"
+      - name: team_hk
+        description: "チーム識別子から生成したTeam Hub用ハッシュキー。"
+      - name: player_source_hk
+        description: "選手識別子から生成したPlayer Source Hub用ハッシュキー。"
+      - name: event_hk
+        description: "イベント識別子から生成したイベント用ハッシュキー。"
+
+  - name: v_stg_teams
+    description: "試合とラインアップからチーム識別子・名称をまとめ、Team Hub用ハッシュキーを付与するビュー。"
+    columns:
+      - name: team_id
+        description: "StatsBombのチーム識別子。"
+      - name: team_name
+        description: "ソース上のチーム名。"
+      - name: load_datetime
+        description: "元レコードを取り込んだ日時。"
+      - name: record_source
+        description: "レコードの取得元を示す識別子。"
+      - name: team_hk
+        description: "team_idから生成したTeam Hub用ハッシュキー。"
+
+  - name: v_stg_player_competition
+    description: "選手の大会参加期間を試合記録から集約し、選手・大会Linkと有効期間を作るビュー。"
+    columns:
+      - name: player_competition_hk
+        description: "選手と大会の組み合わせを表すLink用ハッシュキー。"
+      - name: player_hk
+        description: "Player Hubのハッシュキー。"
+      - name: competition_hk
+        description: "Competition Hubのハッシュキー。"
+      - name: start_date
+        description: "大会で最初に観測された試合日。"
+      - name: end_date
+        description: "大会で最後に観測された試合日。"
+      - name: effectivity_date
+        description: "Effectivity Satelliteの有効日付判定に使う日。大会参加開始日と同じ値。"
+      - name: load_datetime
+        description: "構成する元データの最大取り込み日時。"
+      - name: record_source
+        description: "構成する元データの取得元。"
+
+  - name: hub_competition
+    description: "Competition Hub。大会の業務キーと技術ハッシュキー、ロード日時、データ起源を保持する。"
+    columns:
+      - name: COMPETITION_HK
+        description: "competition_idから生成したCompetition Hubのハッシュキー。"
+      - name: COMPETITION_ID
+        description: "StatsBombの大会業務キー。"
+      - name: LOAD_DATETIME
+        description: "Hubレコードの初回ロード日時。"
+      - name: RECORD_SOURCE
+        description: "Hubレコードのデータ起源。"
+
+  - name: hub_match
+    description: "Match Hub。試合の業務キーと技術ハッシュキー、ロード日時、データ起源を保持する。"
+    columns:
+      - name: MATCH_HK
+        description: "match_idから生成したMatch Hubのハッシュキー。"
+      - name: MATCH_ID
+        description: "StatsBombの試合業務キー。"
+      - name: LOAD_DATETIME
+        description: "Hubレコードの初回ロード日時。"
+      - name: RECORD_SOURCE
+        description: "Hubレコードのデータ起源。"
+
+  - name: hub_player
+    description: "Player Hub。名寄せ後の演習用選手業務キーを保持する。演習用IDは公式識別子ではない。"
+    columns:
+      - name: PLAYER_HK
+        description: "master_player_idから生成したPlayer Hubのハッシュキー。"
+      - name: MASTER_PLAYER_ID
+        description: "名寄せ後の演習用選手業務キー。"
+      - name: LOAD_DATETIME
+        description: "Hubレコードの初回ロード日時。"
+      - name: RECORD_SOURCE
+        description: "Hubレコードのデータ起源。"
+
+  - name: hub_player_source
+    description: "Player Source Hub。StatsBomb固有の選手識別子をソース別に保持する。"
+    columns:
+      - name: PLAYER_SOURCE_HK
+        description: "StatsBomb選手IDから生成したPlayer Source Hubのハッシュキー。"
+      - name: PLAYER_SOURCE_ID
+        description: "StatsBombの選手業務キー。"
+      - name: LOAD_DATETIME
+        description: "Hubレコードの初回ロード日時。"
+      - name: RECORD_SOURCE
+        description: "Hubレコードのデータ起源。"
+
+  - name: hub_team
+    description: "Team Hub。StatsBombチームの業務キーと技術ハッシュキーを保持する。"
+    columns:
+      - name: TEAM_HK
+        description: "team_idから生成したTeam Hubのハッシュキー。"
+      - name: TEAM_ID
+        description: "StatsBombのチーム業務キー。"
+      - name: LOAD_DATETIME
+        description: "Hubレコードの初回ロード日時。"
+      - name: RECORD_SOURCE
+        description: "Hubレコードのデータ起源。"
+
+  - name: link_player_competition
+    description: "選手と大会の関係を表すLink。両端Hubのハッシュキーを結び付ける。"
+    columns:
+      - name: PLAYER_COMPETITION_HK
+        description: "選手・大会の組み合わせから生成したLinkハッシュキー。"
+      - name: PLAYER_HK
+        description: "Player Hubを参照するハッシュキー。"
+      - name: COMPETITION_HK
+        description: "Competition Hubを参照するハッシュキー。"
+      - name: LOAD_DATETIME
+        description: "Linkレコードの初回ロード日時。"
+      - name: RECORD_SOURCE
+        description: "Linkレコードのデータ起源。"
+
+  - name: link_player_match
+    description: "選手・試合・チームの出場関係を表すLink。"
+    columns:
+      - name: PLAYER_MATCH_HK
+        description: "選手・試合・チームの組み合わせから生成したLinkハッシュキー。"
+      - name: PLAYER_HK
+        description: "Player Hubを参照するハッシュキー。"
+      - name: MATCH_HK
+        description: "Match Hubを参照するハッシュキー。"
+      - name: TEAM_HK
+        description: "Team Hubを参照するハッシュキー。"
+      - name: LOAD_DATETIME
+        description: "Linkレコードの初回ロード日時。"
+      - name: RECORD_SOURCE
+        description: "Linkレコードのデータ起源。"
+
+  - name: link_same_as_player
+    description: "統合選手とソース固有選手の同一性を表すSame-as Link。"
+    columns:
+      - name: SAME_AS_PLAYER_HK
+        description: "統合選手とソース選手の組み合わせから生成したLinkハッシュキー。"
+      - name: PLAYER_HK
+        description: "Player Hubを参照するハッシュキー。"
+      - name: PLAYER_SOURCE_HK
+        description: "Player Source Hubを参照するハッシュキー。"
+      - name: LOAD_DATETIME
+        description: "Linkレコードの初回ロード日時。"
+      - name: RECORD_SOURCE
+        description: "Linkレコードのデータ起源。"
+
+  - name: nhl_shot_event
+    description: "シュートイベントを表すNon-Historized Link。イベントを一度だけ記録し、関連Hubキーとイベント属性を保持する。"
+    columns:
+      - name: EVENT_HK
+        description: "StatsBombイベントIDから生成したイベントハッシュキー。"
+      - name: MATCH_HK
+        description: "Match Hubを参照するハッシュキー。"
+      - name: TEAM_HK
+        description: "Team Hubを参照するハッシュキー。"
+      - name: PLAYER_SOURCE_HK
+        description: "Player Source Hubを参照するハッシュキー。"
+      - name: PERIOD
+        description: "イベントが発生したピリオド番号。"
+      - name: MINUTE
+        description: "イベント発生時の試合経過分。"
+      - name: SECOND
+        description: "イベント発生時の分内秒。"
+      - name: EVENT_TIMESTAMP
+        description: "イベントが発生した時刻。"
+      - name: SHOT_TYPE
+        description: "シュートの種類。"
+      - name: SHOT_OUTCOME
+        description: "シュートの結果。"
+      - name: SHOT_XG
+        description: "StatsBombが提供する期待得点値。"
+      - name: LOAD_DATETIME
+        description: "イベントレコードのロード日時。"
+      - name: RECORD_SOURCE
+        description: "イベントレコードのデータ起源。"
+
+  - name: sat_match
+    description: "Match Hubに従属するMatch Satellite。試合属性と変更検知用Hashdiffを履歴として保持する。"
+    columns:
+      - name: MATCH_HK
+        description: "親となるMatch Hubのハッシュキー。"
+      - name: MATCH_HASHDIFF
+        description: "試合属性の変更検知に使うハッシュ差分。"
+      - name: MATCH_DATE
+        description: "試合開催日。"
+      - name: SEASON_NAME
+        description: "シーズン名。"
+      - name: COMPETITION_NAME
+        description: "大会名。"
+      - name: HOME_TEAM_NAME
+        description: "ホームチーム名。"
+      - name: HOME_SCORE
+        description: "ホームチームの得点。"
+      - name: AWAY_TEAM_NAME
+        description: "アウェイチーム名。"
+      - name: AWAY_SCORE
+        description: "アウェイチームの得点。"
+      - name: STAGE_NAME
+        description: "大会内の試合ステージ。"
+      - name: STADIUM_NAME
+        description: "試合会場名。"
+      - name: LOAD_DATETIME
+        description: "Satelliteレコードのロード日時。"
+      - name: RECORD_SOURCE
+        description: "Satelliteレコードのデータ起源。"
+
+  - name: sat_player
+    description: "Player Hubに従属するPlayer Satellite。選手表示名や演習用台帳IDを履歴として保持する。"
+    columns:
+      - name: PLAYER_HK
+        description: "親となるPlayer Hubのハッシュキー。"
+      - name: PLAYER_HASHDIFF
+        description: "選手属性の変更検知に使うハッシュ差分。"
+      - name: PLAYER_NAME
+        description: "名寄せ後に表示する選手名。"
+      - name: TRAINING_REGISTRY_ID
+        description: "演習用選手台帳ID。"
+      - name: LOAD_DATETIME
+        description: "Satelliteレコードのロード日時。"
+      - name: RECORD_SOURCE
+        description: "Satelliteレコードのデータ起源。"
+
+  - name: sat_player_match
+    description: "選手・試合Linkに従属するSatellite。背番号、ポジション、先発区分の履歴を保持する。"
+    columns:
+      - name: PLAYER_MATCH_HK
+        description: "親となるPlayer-Match Linkのハッシュキー。"
+      - name: LINEUP_HASHDIFF
+        description: "ラインアップ属性の変更検知に使うハッシュ差分。"
+      - name: JERSEY_NUMBER
+        description: "試合での背番号。"
+      - name: POSITION_NAME
+        description: "出場時のポジション名。"
+      - name: IS_STARTER
+        description: "先発出場ならtrue。"
+      - name: LOAD_DATETIME
+        description: "Satelliteレコードのロード日時。"
+      - name: RECORD_SOURCE
+        description: "Satelliteレコードのデータ起源。"
+
+  - name: eff_sat_player_competition
+    description: "選手・大会Linkに従属するEffectivity Satellite。大会への参加有効期間を保持する。"
+    columns:
+      - name: PLAYER_COMPETITION_HK
+        description: "親となるPlayer-Competition Linkのハッシュキー。"
+      - name: PLAYER_HK
+        description: "参加選手を識別するPlayer Hubのハッシュキー。"
+      - name: COMPETITION_HK
+        description: "大会を識別するCompetition Hubのハッシュキー。"
+      - name: START_DATE
+        description: "大会参加が最初に観測された日。"
+      - name: END_DATE
+        description: "大会参加が最後に観測された日。"
+      - name: EFFECTIVITY_DATE
+        description: "Effectivity Satelliteの履歴判定に使う有効日付。大会参加開始日と同じ値。"
+      - name: LOAD_DATETIME
+        description: "Effectivityレコードのロード日時。"
+      - name: RECORD_SOURCE
+        description: "Effectivityレコードのデータ起源。"
+
+  - name: sal_player
+    description: "Player HubとSatellite、Same-as Linkを統合したBusiness Vaultの選手Current Stateビュー。"
+    columns:
+      - name: master_player_id
+        description: "名寄せ後の演習用選手識別子。"
+      - name: player_hk
+        description: "Player Hubのハッシュキー。"
+      - name: player_name
+        description: "現在の選手表示名。"
+      - name: training_registry_id
+        description: "演習用選手台帳ID。"
+      - name: statsbomb_player_id
+        description: "StatsBomb側の選手識別子。"
+
+  - name: player_tournament_periods
+    description: "選手ごとに大会で観測された最初と最後の試合日を集約するBusiness Vaultテーブル。"
+    columns:
+      - name: player_hk
+        description: "Player Hubのハッシュキー。"
+      - name: first_observed_match_date
+        description: "大会内で最初に観測された試合日。"
+      - name: last_observed_match_date
+        description: "大会内で最後に観測された試合日。"
+      - name: tournament_name
+        description: "対象大会名。"
+
+  - name: dim_player
+    description: "選手分析用ディメンション。統合選手属性と大会観測期間を1選手1行で提供する。"
+    columns:
+      - name: player_id
+        description: "名寄せ後の演習用選手識別子。"
+      - name: player_name
+        description: "選手表示名。"
+      - name: statsbomb_player_id
+        description: "StatsBomb側の選手識別子。"
+      - name: training_registry_id
+        description: "演習用選手台帳ID。"
+      - name: first_observed_match_date
+        description: "大会内で最初に観測された試合日。"
+      - name: last_observed_match_date
+        description: "大会内で最後に観測された試合日。"
+      - name: tournament_name
+        description: "対象大会名。"
+
+  - name: fct_japan_match_results
+    description: "日本代表の試合結果ファクト。2022 FIFA World Cupの日本代表4試合を1試合1行で提供する。"
+    columns:
+      - name: match_id
+        description: "StatsBombの試合識別子。"
+      - name: match_date
+        description: "試合開催日。"
+      - name: season_name
+        description: "大会シーズン名。"
+      - name: competition_name
+        description: "大会名。"
+      - name: home_team_name
+        description: "ホームチーム名。"
+      - name: home_score
+        description: "ホームチームの得点。"
+      - name: away_team_name
+        description: "アウェイチーム名。"
+      - name: away_score
+        description: "アウェイチームの得点。"
+      - name: japan_won
+        description: "日本代表が勝利した試合ならtrue。引き分けはfalse。"
+      - name: stage_name
+        description: "大会内の試合ステージ。"
+      - name: stadium_name
+        description: "試合会場名。"

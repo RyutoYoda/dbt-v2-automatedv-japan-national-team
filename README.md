@@ -48,7 +48,9 @@ uv run dbt docs generate
 uv run dbt docs serve
 ```
 
-`dbt debug` checks the connection. `dbt seed` loads the small, checked-in source snapshots. `dbt run` builds the staging views, Raw Vault, Business Vault, and marts. The models are incremental where Data Vault history must be retained. To reset the training schemas, drop the project schemas in your Databricks catalog, then rerun the commands above.
+`dbt debug` checks the connection. `dbt seed` loads the small, checked-in source snapshots. `dbt run` builds the staging views, Raw Vault, Business Vault, and marts. The models are incremental where Data Vault history must be retained. The schema macro prefixes every layer with your `DATABRICKS_SCHEMA`, keeping this project in its own namespace in the selected catalog.
+
+Model and seed descriptions are maintained in YAML under `models/descriptions.yml` and `seeds/descriptions.yml`. Project-level `persist_docs` settings write the relation and column descriptions as Unity Catalog comments whenever dbt builds the resources.
 
 The checked-in seeds are the Japan matches from the 2022 FIFA World Cup. To refresh the snapshots from StatsBomb Open Data, run `python3 scripts/refresh_open_data.py` before `dbt seed`. The project intentionally has no Makefile: each command is shown explicitly so learners can see which dbt operation they are running.
 

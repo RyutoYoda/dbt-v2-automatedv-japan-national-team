@@ -6,6 +6,7 @@ select
     m.competition_hk,
     min(m.match_date) as start_date,
     max(m.match_date) as end_date,
+    min(m.match_date) as effectivity_date,
     max(l.load_datetime) as load_datetime,
     max(l.record_source) as record_source
 from {{ ref('v_stg_lineups') }} l

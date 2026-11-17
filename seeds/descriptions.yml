@@ -1,0 +1,118 @@
+version: 2
+
+seeds:
+  - name: statsbomb_matches
+    description: "StatsBomb Open Dataから抽出した2022 FIFA World Cupの試合スナップショット。1行は1試合。"
+    columns:
+      - name: match_id
+        description: "StatsBombの試合識別子。"
+      - name: season_id
+        description: "StatsBombのシーズン識別子。"
+      - name: season_name
+        description: "大会シーズン名。"
+      - name: match_date
+        description: "試合開催日。"
+      - name: kick_off
+        description: "キックオフ時刻。"
+      - name: competition_id
+        description: "StatsBombの大会識別子。"
+      - name: competition_name
+        description: "大会名。"
+      - name: home_team_id
+        description: "ホームチームのStatsBomb識別子。"
+      - name: home_team_name
+        description: "ホームチーム名。"
+      - name: home_score
+        description: "ホームチームの得点。"
+      - name: away_team_id
+        description: "アウェイチームのStatsBomb識別子。"
+      - name: away_team_name
+        description: "アウェイチーム名。"
+      - name: away_score
+        description: "アウェイチームの得点。"
+      - name: stage_name
+        description: "大会内の試合ステージ。"
+      - name: stadium_name
+        description: "試合会場名。"
+      - name: record_source
+        description: "データ取得元を示す識別子。"
+      - name: loaded_at
+        description: "CSVスナップショットに記録された取り込み日時。"
+
+  - name: statsbomb_lineups
+    description: "StatsBomb Open Dataから抽出した2022 FIFA World Cupの出場選手スナップショット。1行は1選手の1試合出場記録。"
+    columns:
+      - name: match_id
+        description: "StatsBombの試合識別子。"
+      - name: season_name
+        description: "大会シーズン名。"
+      - name: match_date
+        description: "試合開催日。"
+      - name: team_id
+        description: "チームのStatsBomb識別子。"
+      - name: team_name
+        description: "チーム名。"
+      - name: player_id
+        description: "選手のStatsBomb識別子。"
+      - name: player_name
+        description: "ソース上の選手名。"
+      - name: jersey_number
+        description: "試合での背番号。"
+      - name: position_name
+        description: "出場時のポジション名。"
+      - name: is_starter
+        description: "先発出場ならtrue。"
+      - name: record_source
+        description: "データ取得元を示す識別子。"
+      - name: loaded_at
+        description: "CSVスナップショットに記録された取り込み日時。"
+
+  - name: statsbomb_shots
+    description: "StatsBomb Open Dataから抽出した2022 FIFA World Cupのシュートイベントスナップショット。1行は1シュートイベント。"
+    columns:
+      - name: event_id
+        description: "StatsBombイベント識別子。"
+      - name: match_id
+        description: "イベントが発生した試合の識別子。"
+      - name: period
+        description: "試合のピリオド番号。"
+      - name: minute
+        description: "イベント発生時の試合経過分。"
+      - name: second
+        description: "イベント発生時の分内秒。"
+      - name: timestamp
+        description: "イベント発生時刻のソース表現。"
+      - name: team_id
+        description: "シュートを行ったチームの識別子。"
+      - name: team_name
+        description: "シュートを行ったチーム名。"
+      - name: player_id
+        description: "シュートを行った選手の識別子。"
+      - name: player_name
+        description: "シュートを行った選手名。"
+      - name: shot_type
+        description: "シュートの種類。"
+      - name: shot_outcome
+        description: "シュートの結果。"
+      - name: shot_xg
+        description: "StatsBombが提供する期待得点値。"
+      - name: record_source
+        description: "データ取得元を示す識別子。"
+      - name: loaded_at
+        description: "CSVスナップショットに記録された取り込み日時。"
+
+  - name: training_player_identity_map
+    description: "Data Vaultの名寄せを学ぶための演習用ID対応表。選手名や台帳IDは学習用の架空値を含み、公式登録情報ではない。"
+    columns:
+      - name: statsbomb_player_id
+        description: "StatsBomb側の選手識別子。"
+      - name: training_registry_id
+        description: "演習用の選手台帳識別子。公式IDではない。"
+      - name: master_player_id
+        description: "演習用に統合した選手識別子。公式IDではない。"
+      - name: player_name
+        description: "演習用名寄せ後に表示する名前。公式登録情報ではない。"
+      - name: record_source
+        description: "名寄せレコードのデータ起源。"
+      - name: loaded_at
+        description: "CSVスナップショットに記録された取り込み日時。"

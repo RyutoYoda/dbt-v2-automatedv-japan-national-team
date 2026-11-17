@@ -1,10 +1,15 @@
+{{ config(
+    on_schema_change='append_new_columns',
+    post_hook="UPDATE {{ this }} SET EFFECTIVITY_DATE = START_DATE WHERE EFFECTIVITY_DATE IS NULL"
+) }}
+
 {% set source_model = 'v_stg_player_competition' %}
 {% set src_pk = 'PLAYER_COMPETITION_HK' %}
 {% set src_dfk = 'PLAYER_HK' %}
 {% set src_sfk = 'COMPETITION_HK' %}
 {% set src_start_date = 'START_DATE' %}
 {% set src_end_date = 'END_DATE' %}
-{% set src_eff = 'START_DATE' %}
+{% set src_eff = 'EFFECTIVITY_DATE' %}
 {% set src_ldts = 'LOAD_DATETIME' %}
 {% set src_source = 'RECORD_SOURCE' %}
 
