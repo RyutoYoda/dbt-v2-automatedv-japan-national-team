@@ -1,6 +1,6 @@
 # Data Vault 2.0 with dbt v2: Samurai Blue training project
 
-This project teaches the Raw Vault and Business Vault patterns from the Japan national football team example. It uses dbt v2 and AutomateDV, with Snowflake as the execution platform because it is supported by both projects.
+This project teaches the Raw Vault and Business Vault patterns from the Japan national football team example. It uses dbt v2 and AutomateDV on Databricks Free Edition, so learners can run the project without a paid warehouse account.
 
 ## What you will learn
 
@@ -18,9 +18,9 @@ The source fixtures cover Japan's 2022 FIFA World Cup matches in StatsBomb Open 
 - Python 3.10+
 - `uv`
 - dbt v2.0.11+
-- A Snowflake account and credentials for running models
+- A Databricks Free Edition workspace with a SQL warehouse
 
-AutomateDV v0.11.5 is pinned. Its compatibility matrix supports dbt versions `>=1.9.x, <3.0.0`; the package officially lists Snowflake among supported platforms. DuckDB is not in AutomateDV's platform support list, so this training project uses Snowflake rather than implying DuckDB support.
+AutomateDV v0.11.5 is pinned. Its documented dbt compatibility range includes dbt v2, and Databricks is an officially supported platform. dbt v2 also supports the Databricks adapter.
 
 ## Setup and run
 
@@ -30,7 +30,15 @@ uv run dbt deps
 cp profiles.yml.example ~/.dbt/profiles.yml
 ```
 
-Set the environment variables referenced by `profiles.yml.example`, then run the commands directly:
+Set these values from your Databricks workspace and SQL warehouse settings. `DATABRICKS_HOST` is the workspace host without `https://`; `DATABRICKS_HTTP_PATH` is the SQL warehouse HTTP path; `DATABRICKS_CATALOG` is the Unity Catalog catalog to use. `DATABRICKS_SCHEMA` is optional and defaults to `DBT_VAULT_TRAINING`. OAuth handles sign-in; do not put access tokens in this repository.
+
+```bash
+export DATABRICKS_HOST="<workspace-host>"
+export DATABRICKS_HTTP_PATH="<sql-warehouse-http-path>"
+export DATABRICKS_CATALOG="<catalog-name>"
+```
+
+Then run the commands directly:
 
 ```bash
 uv run dbt debug
@@ -40,7 +48,7 @@ uv run dbt docs generate
 uv run dbt docs serve
 ```
 
-`dbt debug` checks the connection. `dbt seed` loads the small, checked-in source snapshots. `dbt run` builds the staging views, Raw Vault, Business Vault, and marts. The models are incremental where Data Vault history must be retained. To reset the training schemas, drop the project schemas in your Snowflake development database, then rerun the commands above.
+`dbt debug` checks the connection. `dbt seed` loads the small, checked-in source snapshots. `dbt run` builds the staging views, Raw Vault, Business Vault, and marts. The models are incremental where Data Vault history must be retained. To reset the training schemas, drop the project schemas in your Databricks catalog, then rerun the commands above.
 
 The checked-in seeds are the Japan matches from the 2022 FIFA World Cup. To refresh the snapshots from StatsBomb Open Data, run `python3 scripts/refresh_open_data.py` before `dbt seed`. The project intentionally has no Makefile: each command is shown explicitly so learners can see which dbt operation they are running.
 
@@ -54,7 +62,7 @@ The checked-in seeds are the Japan matches from the 2022 FIFA World Cup. To refr
 | Business Vault | `sal_player`, `player_tournament_periods` | Resolve identities and derive observed participation periods |
 | Marts | `fct_japan_match_results`, `dim_player` | Consumer-friendly examples |
 
-`eff_sat_player_tournament` describes the first-to-last observed lineup window in a tournament. It does not claim to be the official squad appointment or contract period.
+`eff_sat_player_competition` records each player's first and last observed lineup dates in the 2022 tournament. It does not claim to be the official squad appointment or contract period.
 
 ## Data source and attribution
 
@@ -64,6 +72,7 @@ The reference article is [推し活サイトで学ぶData Vault入門](https://w
 
 ## Notes
 
-- dbt v2 requires a supported adapter. AutomateDV v0.11.5 is pinned to a version whose compatibility range includes dbt v2.
-- Snowflake credentials are not stored in this repository. Use a dedicated development database/schema.
+- dbt v2 requires a supported adapter. Databricks is supported by both dbt v2 and AutomateDV.
+- Databricks Free Edition has compute quotas and is for non-commercial use. A SQL warehouse is limited to 2X-Small; see [Free Edition limitations](https://docs.databricks.com/aws/en/getting-started/free-edition-limitations).
+- Authentication is handled through OAuth. No Databricks token or other credential belongs in this repository.
 - Incremental Raw Vault models preserve history. Do not use `--full-refresh` casually after loading data.

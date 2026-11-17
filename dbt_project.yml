@@ -32,31 +32,33 @@ seeds:
     +quote_columns: false
     statsbomb_matches:
       +column_types:
-        match_id: NUMBER(38,0)
-        season_id: NUMBER(38,0)
-        home_team_id: NUMBER(38,0)
-        away_team_id: NUMBER(38,0)
-        home_score: NUMBER(38,0)
-        away_score: NUMBER(38,0)
+        match_id: BIGINT
+        season_id: BIGINT
+        competition_id: BIGINT
+        home_team_id: BIGINT
+        away_team_id: BIGINT
+        home_score: INT
+        away_score: INT
+        season_name: STRING
     statsbomb_lineups:
       +column_types:
-        match_id: NUMBER(38,0)
-        team_id: NUMBER(38,0)
-        player_id: NUMBER(38,0)
-        jersey_number: NUMBER(38,0)
+        match_id: BIGINT
+        team_id: BIGINT
+        player_id: BIGINT
+        jersey_number: INT
     statsbomb_shots:
       +column_types:
-        match_id: NUMBER(38,0)
+        match_id: BIGINT
         event_id: STRING
-        period: NUMBER(38,0)
-        minute: NUMBER(38,0)
-        second: NUMBER(38,0)
-        team_id: NUMBER(38,0)
-        player_id: NUMBER(38,0)
-        shot_xg: FLOAT
+        period: INT
+        minute: INT
+        second: INT
+        team_id: BIGINT
+        player_id: BIGINT
+        shot_xg: DOUBLE
     training_player_identity_map:
       +column_types:
-        statsbomb_player_id: NUMBER(38,0)
+        statsbomb_player_id: BIGINT
 
 vars:
   automate_dv.hash: MD5
