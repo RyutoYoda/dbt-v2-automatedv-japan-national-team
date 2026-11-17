@@ -1,0 +1,129 @@
+statsbomb_player_id,training_registry_id,master_player_id,player_name,record_source,loaded_at
+3053,JPN-TR-3053,PLAYER-3053,Leroy Sané,training_identity_crosswalk,2026-11-17T00:00:00
+3167,JPN-TR-3167,PLAYER-3167,Antonio Rüdiger,training_identity_crosswalk,2026-11-17T00:00:00
+3175,JPN-TR-3175,PLAYER-3175,Eiji Kawashima,training_identity_crosswalk,2026-11-17T00:00:00
+3300,JPN-TR-3300,PLAYER-3300,Maya Yoshida,training_identity_crosswalk,2026-11-17T00:00:00
+3441,JPN-TR-3441,PLAYER-3441,Nikola Vlašić,training_identity_crosswalk,2026-11-17T00:00:00
+3471,JPN-TR-3471,PLAYER-3471,Dejan Lovren,training_identity_crosswalk,2026-11-17T00:00:00
+3477,JPN-TR-3477,PLAYER-3477,Álvaro Borja Morata Martín,training_identity_crosswalk,2026-11-17T00:00:00
+3530,JPN-TR-3530,PLAYER-3530,Hiroki Sakai,training_identity_crosswalk,2026-11-17T00:00:00
+3957,JPN-TR-3957,PLAYER-3957,César Azpilicueta Tanco,training_identity_crosswalk,2026-11-17T00:00:00
+4127,JPN-TR-4127,PLAYER-4127,David Raya Martin,training_identity_crosswalk,2026-11-17T00:00:00
+4353,JPN-TR-4353,PLAYER-4353,Aymeric Laporte,training_identity_crosswalk,2026-11-17T00:00:00
+4440,JPN-TR-4440,PLAYER-4440,Kevin Trapp,training_identity_crosswalk,2026-11-17T00:00:00
+5199,JPN-TR-5199,PLAYER-5199,Jorge Resurrección Merodio,training_identity_crosswalk,2026-11-17T00:00:00
+5203,JPN-TR-5203,PLAYER-5203,Sergio Busquets i Burgos,training_identity_crosswalk,2026-11-17T00:00:00
+5211,JPN-TR-5211,PLAYER-5211,Jordi Alba Ramos,training_identity_crosswalk,2026-11-17T00:00:00
+5456,JPN-TR-5456,PLAYER-5456,Mateo Kovačić,training_identity_crosswalk,2026-11-17T00:00:00
+5460,JPN-TR-5460,PLAYER-5460,Andrej Kramarić,training_identity_crosswalk,2026-11-17T00:00:00
+5463,JPN-TR-5463,PLAYER-5463,Luka Modrić,training_identity_crosswalk,2026-11-17T00:00:00
+5468,JPN-TR-5468,PLAYER-5468,Domagoj Vida,training_identity_crosswalk,2026-11-17T00:00:00
+5469,JPN-TR-5469,PLAYER-5469,Marcelo Brozović,training_identity_crosswalk,2026-11-17T00:00:00
+5474,JPN-TR-5474,PLAYER-5474,Ivan Perišić,training_identity_crosswalk,2026-11-17T00:00:00
+5555,JPN-TR-5555,PLAYER-5555,Julian Brandt,training_identity_crosswalk,2026-11-17T00:00:00
+5562,JPN-TR-5562,PLAYER-5562,Thomas Müller,training_identity_crosswalk,2026-11-17T00:00:00
+5570,JPN-TR-5570,PLAYER-5570,Manuel Neuer,training_identity_crosswalk,2026-11-17T00:00:00
+5579,JPN-TR-5579,PLAYER-5579,Joshua Kimmich,training_identity_crosswalk,2026-11-17T00:00:00
+5581,JPN-TR-5581,PLAYER-5581,Joel Nathaniel Campbell Samuels,training_identity_crosswalk,2026-11-17T00:00:00
+5582,JPN-TR-5582,PLAYER-5582,Celso Borges Mora,training_identity_crosswalk,2026-11-17T00:00:00
+5592,JPN-TR-5592,PLAYER-5592,Bryan Ruiz González,training_identity_crosswalk,2026-11-17T00:00:00
+5595,JPN-TR-5595,PLAYER-5595,Johan Alberto Venegas Ulloa,training_identity_crosswalk,2026-11-17T00:00:00
+5597,JPN-TR-5597,PLAYER-5597,Keylor Navas Gamboa,training_identity_crosswalk,2026-11-17T00:00:00
+5598,JPN-TR-5598,PLAYER-5598,Óscar Esau Duarte Gaitán,training_identity_crosswalk,2026-11-17T00:00:00
+5600,JPN-TR-5600,PLAYER-5600,Francisco Javier Calvo Quesada,training_identity_crosswalk,2026-11-17T00:00:00
+5690,JPN-TR-5690,PLAYER-5690,Yuto Nagatomo,training_identity_crosswalk,2026-11-17T00:00:00
+5693,JPN-TR-5693,PLAYER-5693,Gaku Shibasaki,training_identity_crosswalk,2026-11-17T00:00:00
+5719,JPN-TR-5719,PLAYER-5719,Marco Asensio Willemsen,training_identity_crosswalk,2026-11-17T00:00:00
+5721,JPN-TR-5721,PLAYER-5721,Daniel Carvajal Ramos,training_identity_crosswalk,2026-11-17T00:00:00
+5836,JPN-TR-5836,PLAYER-5836,Bryan Oviedo,training_identity_crosswalk,2026-11-17T00:00:00
+5839,JPN-TR-5839,PLAYER-5839,Yeltsin Ignacio Tejeda Valverde,training_identity_crosswalk,2026-11-17T00:00:00
+6322,JPN-TR-6322,PLAYER-6322,Niklas Süle,training_identity_crosswalk,2026-11-17T00:00:00
+6324,JPN-TR-6324,PLAYER-6324,Leon Goretzka,training_identity_crosswalk,2026-11-17T00:00:00
+6328,JPN-TR-6328,PLAYER-6328,Kendall Jamaal Waston Manley,training_identity_crosswalk,2026-11-17T00:00:00
+6583,JPN-TR-6583,PLAYER-6583,Carlos Soler Barragán,training_identity_crosswalk,2026-11-17T00:00:00
+6720,JPN-TR-6720,PLAYER-6720,Pablo Sarabia García,training_identity_crosswalk,2026-11-17T00:00:00
+6748,JPN-TR-6748,PLAYER-6748,Ferrán Torres García,training_identity_crosswalk,2026-11-17T00:00:00
+6765,JPN-TR-6765,PLAYER-6765,Rodrigo Hernández Cascante,training_identity_crosswalk,2026-11-17T00:00:00
+6840,JPN-TR-6840,PLAYER-6840,Marcos Llorente Moreno,training_identity_crosswalk,2026-11-17T00:00:00
+6892,JPN-TR-6892,PLAYER-6892,Pau Francisco Torres,training_identity_crosswalk,2026-11-17T00:00:00
+7693,JPN-TR-7693,PLAYER-7693,Bruno Petković,training_identity_crosswalk,2026-11-17T00:00:00
+8227,JPN-TR-8227,PLAYER-8227,Mario Götze,training_identity_crosswalk,2026-11-17T00:00:00
+8361,JPN-TR-8361,PLAYER-8361,Ritsu Doan,training_identity_crosswalk,2026-11-17T00:00:00
+8400,JPN-TR-8400,PLAYER-8400,Serge Gnabry,training_identity_crosswalk,2026-11-17T00:00:00
+8507,JPN-TR-8507,PLAYER-8507,Lukas Klostermann,training_identity_crosswalk,2026-11-17T00:00:00
+8511,JPN-TR-8511,PLAYER-8511,Thilo Kehrer,training_identity_crosswalk,2026-11-17T00:00:00
+8546,JPN-TR-8546,PLAYER-8546,Niclas Füllkrug,training_identity_crosswalk,2026-11-17T00:00:00
+8654,JPN-TR-8654,PLAYER-8654,Ante Budimir,training_identity_crosswalk,2026-11-17T00:00:00
+8776,JPN-TR-8776,PLAYER-8776,Takumi Minamino,training_identity_crosswalk,2026-11-17T00:00:00
+8804,JPN-TR-8804,PLAYER-8804,Jonas Hofmann,training_identity_crosswalk,2026-11-17T00:00:00
+8808,JPN-TR-8808,PLAYER-8808,Matthias Ginter,training_identity_crosswalk,2026-11-17T00:00:00
+8945,JPN-TR-8945,PLAYER-8945,Christian Günter,training_identity_crosswalk,2026-11-17T00:00:00
+8949,JPN-TR-8949,PLAYER-8949,Takuma Asano,training_identity_crosswalk,2026-11-17T00:00:00
+8966,JPN-TR-8966,PLAYER-8966,Kai Havertz,training_identity_crosswalk,2026-11-17T00:00:00
+9411,JPN-TR-9411,PLAYER-9411,Daichi Kamada,training_identity_crosswalk,2026-11-17T00:00:00
+9843,JPN-TR-9843,PLAYER-9843,Robert Lynch Sanchez,training_identity_crosswalk,2026-11-17T00:00:00
+10287,JPN-TR-10287,PLAYER-10287,İlkay Gündoğan,training_identity_crosswalk,2026-11-17T00:00:00
+11127,JPN-TR-11127,PLAYER-11127,Borna Barišić,training_identity_crosswalk,2026-11-17T00:00:00
+11603,JPN-TR-11603,PLAYER-11603,Mario Pašalić,training_identity_crosswalk,2026-11-17T00:00:00
+11748,JPN-TR-11748,PLAYER-11748,Unai Simón Mendibil,training_identity_crosswalk,2026-11-17T00:00:00
+12034,JPN-TR-12034,PLAYER-12034,David Raum,training_identity_crosswalk,2026-11-17T00:00:00
+15477,JPN-TR-15477,PLAYER-15477,Ronald Alberto Matarrita Ulate,training_identity_crosswalk,2026-11-17T00:00:00
+16527,JPN-TR-16527,PLAYER-16527,Mislav Oršić,training_identity_crosswalk,2026-11-17T00:00:00
+16531,JPN-TR-16531,PLAYER-16531,Dominik Livaković,training_identity_crosswalk,2026-11-17T00:00:00
+16532,JPN-TR-16532,PLAYER-16532,Daniel Olmo Carvajal,training_identity_crosswalk,2026-11-17T00:00:00
+20055,JPN-TR-20055,PLAYER-20055,Marc-André ter Stegen,training_identity_crosswalk,2026-11-17T00:00:00
+22041,JPN-TR-22041,PLAYER-22041,Marko Livaja,training_identity_crosswalk,2026-11-17T00:00:00
+23527,JPN-TR-23527,PLAYER-23527,Junya Ito,training_identity_crosswalk,2026-11-17T00:00:00
+23721,JPN-TR-23721,PLAYER-23721,Wataru Endo,training_identity_crosswalk,2026-11-17T00:00:00
+23730,JPN-TR-23730,PLAYER-23730,Takehiro Tomiyasu,training_identity_crosswalk,2026-11-17T00:00:00
+24118,JPN-TR-24118,PLAYER-24118,Nico Schlotterbeck,training_identity_crosswalk,2026-11-17T00:00:00
+24916,JPN-TR-24916,PLAYER-24916,Armel Bella-Kotchap,training_identity_crosswalk,2026-11-17T00:00:00
+25719,JPN-TR-25719,PLAYER-25719,Shūichi Gonda,training_identity_crosswalk,2026-11-17T00:00:00
+27163,JPN-TR-27163,PLAYER-27163,Juan Pablo Vargas Campos,training_identity_crosswalk,2026-11-17T00:00:00
+28835,JPN-TR-28835,PLAYER-28835,Ivica Ivušić,training_identity_crosswalk,2026-11-17T00:00:00
+28914,JPN-TR-28914,PLAYER-28914,Lovro Majer,training_identity_crosswalk,2026-11-17T00:00:00
+29163,JPN-TR-29163,PLAYER-29163,Josip Juranović,training_identity_crosswalk,2026-11-17T00:00:00
+29342,JPN-TR-29342,PLAYER-29342,Ivo Grbić,training_identity_crosswalk,2026-11-17T00:00:00
+29366,JPN-TR-29366,PLAYER-29366,Daniel Schmidt,training_identity_crosswalk,2026-11-17T00:00:00
+29595,JPN-TR-29595,PLAYER-29595,Ko Itakura,training_identity_crosswalk,2026-11-17T00:00:00
+30486,JPN-TR-30486,PLAYER-30486,Pedro González López,training_identity_crosswalk,2026-11-17T00:00:00
+30628,JPN-TR-30628,PLAYER-30628,Daizen Maeda,training_identity_crosswalk,2026-11-17T00:00:00
+30756,JPN-TR-30756,PLAYER-30756,Anssumane Fati,training_identity_crosswalk,2026-11-17T00:00:00
+31090,JPN-TR-31090,PLAYER-31090,Takefusa Kubo,training_identity_crosswalk,2026-11-17T00:00:00
+31953,JPN-TR-31953,PLAYER-31953,Eric García Martret,training_identity_crosswalk,2026-11-17T00:00:00
+32602,JPN-TR-32602,PLAYER-32602,Kristijan Jakić,training_identity_crosswalk,2026-11-17T00:00:00
+32689,JPN-TR-32689,PLAYER-32689,Martin Erlić,training_identity_crosswalk,2026-11-17T00:00:00
+33018,JPN-TR-33018,PLAYER-33018,Joško Gvardiol,training_identity_crosswalk,2026-11-17T00:00:00
+35609,JPN-TR-35609,PLAYER-35609,Karim-David Adeyemi,training_identity_crosswalk,2026-11-17T00:00:00
+35641,JPN-TR-35641,PLAYER-35641,Hugo Guillamón Sanmartín,training_identity_crosswalk,2026-11-17T00:00:00
+37122,JPN-TR-37122,PLAYER-37122,Yuki Soma,training_identity_crosswalk,2026-11-17T00:00:00
+37148,JPN-TR-37148,PLAYER-37148,Josip Šutalo,training_identity_crosswalk,2026-11-17T00:00:00
+37208,JPN-TR-37208,PLAYER-37208,Ao Tanaka,training_identity_crosswalk,2026-11-17T00:00:00
+37209,JPN-TR-37209,PLAYER-37209,Miki Yamane,training_identity_crosswalk,2026-11-17T00:00:00
+37211,JPN-TR-37211,PLAYER-37211,Kaoru Mitoma,training_identity_crosswalk,2026-11-17T00:00:00
+37215,JPN-TR-37215,PLAYER-37215,Shogo Taniguchi,training_identity_crosswalk,2026-11-17T00:00:00
+37221,JPN-TR-37221,PLAYER-37221,Hidemasa Morita,training_identity_crosswalk,2026-11-17T00:00:00
+38285,JPN-TR-38285,PLAYER-38285,Ayase Ueda,training_identity_crosswalk,2026-11-17T00:00:00
+38837,JPN-TR-38837,PLAYER-38837,Youssoufa Moukoko,training_identity_crosswalk,2026-11-17T00:00:00
+39161,JPN-TR-39161,PLAYER-39161,Alejandro Balde Martínez,training_identity_crosswalk,2026-11-17T00:00:00
+39490,JPN-TR-39490,PLAYER-39490,Luka Sučić,training_identity_crosswalk,2026-11-17T00:00:00
+39565,JPN-TR-39565,PLAYER-39565,Jamal Musiala,training_identity_crosswalk,2026-11-17T00:00:00
+50494,JPN-TR-50494,PLAYER-50494,Yeremy Jesús Pino Santos,training_identity_crosswalk,2026-11-17T00:00:00
+68574,JPN-TR-68574,PLAYER-68574,Nicholas Williams Arthuer,training_identity_crosswalk,2026-11-17T00:00:00
+95272,JPN-TR-95272,PLAYER-95272,Hiroki Ito,training_identity_crosswalk,2026-11-17T00:00:00
+97291,JPN-TR-97291,PLAYER-97291,Patrick Gilmar Sequeira Mejías,training_identity_crosswalk,2026-11-17T00:00:00
+100436,JPN-TR-100436,PLAYER-100436,Shuto Machino,training_identity_crosswalk,2026-11-17T00:00:00
+108340,JPN-TR-108340,PLAYER-108340,Brandon Aguilera Zamora,training_identity_crosswalk,2026-11-17T00:00:00
+130185,JPN-TR-130185,PLAYER-130185,Keysher Fuller Spence,training_identity_crosswalk,2026-11-17T00:00:00
+130194,JPN-TR-130194,PLAYER-130194,Esteban Alvarado Brown,training_identity_crosswalk,2026-11-17T00:00:00
+132271,JPN-TR-132271,PLAYER-132271,Carlos Manuel Martínez Castro,training_identity_crosswalk,2026-11-17T00:00:00
+132296,JPN-TR-132296,PLAYER-132296,Anthony Daniel Contreras Enríquez,training_identity_crosswalk,2026-11-17T00:00:00
+132497,JPN-TR-132497,PLAYER-132497,Gerson Torres Barrantes,training_identity_crosswalk,2026-11-17T00:00:00
+132728,JPN-TR-132728,PLAYER-132728,Jewison Bennette,training_identity_crosswalk,2026-11-17T00:00:00
+132743,JPN-TR-132743,PLAYER-132743,Douglas Andrey López Araya,training_identity_crosswalk,2026-11-17T00:00:00
+132756,JPN-TR-132756,PLAYER-132756,Youstin Delfin Salas Gómez,training_identity_crosswalk,2026-11-17T00:00:00
+132772,JPN-TR-132772,PLAYER-132772,Daniel Alonso Chacón Salas,training_identity_crosswalk,2026-11-17T00:00:00
+133353,JPN-TR-133353,PLAYER-133353,Pablo Martín Páez Gavira,training_identity_crosswalk,2026-11-17T00:00:00
+135271,JPN-TR-135271,PLAYER-135271,Roan Roberto Wilson Gordon,training_identity_crosswalk,2026-11-17T00:00:00
+184468,JPN-TR-184468,PLAYER-184468,Álvaro José Zamora Mata,training_identity_crosswalk,2026-11-17T00:00:00
+283799,JPN-TR-283799,PLAYER-283799,Anthony William Hernández González,training_identity_crosswalk,2026-11-17T00:00:00

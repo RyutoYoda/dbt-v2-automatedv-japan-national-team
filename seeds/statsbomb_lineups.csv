@@ -1,0 +1,205 @@
+match_id,season_name,match_date,team_id,team_name,player_id,player_name,jersey_number,position_name,is_starter,record_source,loaded_at
+3857284,2022,2022-11-23,770,Germany,3167,Antonio Rüdiger,2,Right Center Back,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,24916,Armel Bella-Kotchap,25,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,8945,Christian Günter,20,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,12034,David Raum,3,Left Back,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,39565,Jamal Musiala,14,Left Wing,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,8804,Jonas Hofmann,18,Center Attacking Midfield,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,5579,Joshua Kimmich,6,Right Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,5555,Julian Brandt,17,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,8966,Kai Havertz,7,Center Forward,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,35609,Karim-David Adeyemi,24,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,4440,Kevin Trapp,12,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,6324,Leon Goretzka,8,Left Defensive Midfield,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,3053,Leroy Sané,19,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,8507,Lukas Klostermann,16,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,5570,Manuel Neuer,1,Goalkeeper,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,20055,Marc-André ter Stegen,22,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,8227,Mario Götze,11,Center Attacking Midfield,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,8808,Matthias Ginter,4,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,8546,Niclas Füllkrug,9,Center Forward,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,24118,Nico Schlotterbeck,23,Left Center Back,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,6322,Niklas Süle,15,Right Back,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,8400,Serge Gnabry,10,Right Wing,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,8511,Thilo Kehrer,5,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,5562,Thomas Müller,13,Center Attacking Midfield,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,38837,Youssoufa Moukoko,26,Left Wing,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,770,Germany,10287,İlkay Gündoğan,21,Left Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,37208,Ao Tanaka,17,Left Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,38285,Ayase Ueda,21,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,9411,Daichi Kamada,15,Center Attacking Midfield,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,30628,Daizen Maeda,25,Center Forward,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,29366,Daniel Schmidt,23,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,3175,Eiji Kawashima,1,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,5693,Gaku Shibasaki,7,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,37221,Hidemasa Morita,13,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,95272,Hiroki Ito,26,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,3530,Hiroki Sakai,19,Right Back,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,23527,Junya Ito,14,Right Wing,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,37211,Kaoru Mitoma,9,Left Wing Back,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,29595,Ko Itakura,4,Right Center Back,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,3300,Maya Yoshida,22,Left Center Back,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,37209,Miki Yamane,2,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,8361,Ritsu Doan,8,Left Defensive Midfield,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,37215,Shogo Taniguchi,3,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,100436,Shuto Machino,20,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,25719,Shūichi Gonda,12,Goalkeeper,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,31090,Takefusa Kubo,11,Left Wing,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,23730,Takehiro Tomiyasu,16,Left Center Back,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,8949,Takuma Asano,18,Center Forward,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,8776,Takumi Minamino,10,Right Wing Back,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,23721,Wataru Endo,6,Right Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,37122,Yuki Soma,24,Unknown,False,statsbomb_open_data,2026-05-04T01:41:05.435
+3857284,2022,2022-11-23,778,Japan,5690,Yuto Nagatomo,5,Left Back,True,statsbomb_open_data,2026-05-04T01:41:05.435
+3857295,2022,2022-11-27,795,Costa Rica,132296,Anthony Daniel Contreras Enríquez,7,Center Forward,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,283799,Anthony William Hernández González,25,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,108340,Brandon Aguilera Zamora,20,Right Wing,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,5836,Bryan Oviedo,8,Left Wing Back,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,5592,Bryan Ruiz González,10,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,132271,Carlos Manuel Martínez Castro,16,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,5582,Celso Borges Mora,5,Right Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,132772,Daniel Alonso Chacón Salas,2,Center Forward,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,132743,Douglas Andrey López Araya,21,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,130194,Esteban Alvarado Brown,18,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,5600,Francisco Javier Calvo Quesada,15,Left Center Back,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,132497,Gerson Torres Barrantes,13,Right Wing,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,132728,Jewison Bennette,9,Center Forward,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,5581,Joel Nathaniel Campbell Samuels,12,Left Wing,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,5595,Johan Alberto Venegas Ulloa,11,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,27163,Juan Pablo Vargas Campos,3,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,6328,Kendall Jamaal Waston Manley,19,Center Back,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,5597,Keylor Navas Gamboa,1,Goalkeeper,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,130185,Keysher Fuller Spence,4,Right Wing Back,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,97291,Patrick Gilmar Sequeira Mejías,23,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,135271,Roan Roberto Wilson Gordon,24,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,15477,Ronald Alberto Matarrita Ulate,22,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,5839,Yeltsin Ignacio Tejeda Valverde,17,Left Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,132756,Youstin Delfin Salas Gómez,14,Right Defensive Midfield,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,184468,Álvaro José Zamora Mata,26,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,795,Costa Rica,5598,Óscar Esau Duarte Gaitán,6,Right Center Back,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,37208,Ao Tanaka,17,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,38285,Ayase Ueda,21,Right Center Forward,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,9411,Daichi Kamada,15,Left Center Forward,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,30628,Daizen Maeda,25,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,29366,Daniel Schmidt,23,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,3175,Eiji Kawashima,1,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,5693,Gaku Shibasaki,7,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,37221,Hidemasa Morita,13,Left Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,95272,Hiroki Ito,26,Left Center Back,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,3530,Hiroki Sakai,19,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,23527,Junya Ito,14,Right Wing,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,37211,Kaoru Mitoma,9,Right Wing Back,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,29595,Ko Itakura,4,Right Center Back,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,3300,Maya Yoshida,22,Left Center Back,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,37209,Miki Yamane,2,Right Back,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,8361,Ritsu Doan,8,Right Midfield,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,37215,Shogo Taniguchi,3,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,100436,Shuto Machino,20,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,25719,Shūichi Gonda,12,Goalkeeper,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,31090,Takefusa Kubo,11,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,23730,Takehiro Tomiyasu,16,Unknown,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,8949,Takuma Asano,18,Center Forward,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,8776,Takumi Minamino,10,Right Wing Back,False,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,23721,Wataru Endo,6,Right Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,37122,Yuki Soma,24,Left Midfield,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857295,2022,2022-11-27,778,Japan,5690,Yuto Nagatomo,5,Left Back,True,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857255,2022,2022-12-01,778,Japan,37208,Ao Tanaka,17,Right Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,38285,Ayase Ueda,21,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,9411,Daichi Kamada,15,Left Wing,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,30628,Daizen Maeda,25,Center Forward,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,29366,Daniel Schmidt,23,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,3175,Eiji Kawashima,1,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,5693,Gaku Shibasaki,7,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,37221,Hidemasa Morita,13,Left Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,95272,Hiroki Ito,26,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,3530,Hiroki Sakai,19,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,23527,Junya Ito,14,Right Wing Back,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,37211,Kaoru Mitoma,9,Left Wing Back,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,29595,Ko Itakura,4,Right Center Back,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,3300,Maya Yoshida,22,Center Back,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,37209,Miki Yamane,2,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,8361,Ritsu Doan,8,Right Wing,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,37215,Shogo Taniguchi,3,Left Center Back,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,100436,Shuto Machino,20,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,25719,Shūichi Gonda,12,Goalkeeper,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,31090,Takefusa Kubo,11,Right Wing,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,23730,Takehiro Tomiyasu,16,Left Wing,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,8949,Takuma Asano,18,Center Forward,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,8776,Takumi Minamino,10,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,23721,Wataru Endo,6,Right Defensive Midfield,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,37122,Yuki Soma,24,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,778,Japan,5690,Yuto Nagatomo,5,Left Wing Back,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,39161,Alejandro Balde Martínez,14,Left Back,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,30756,Anssumane Fati,25,Right Center Midfield,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,4353,Aymeric Laporte,24,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,6583,Carlos Soler Barragán,19,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,3957,César Azpilicueta Tanco,2,Right Back,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,5721,Daniel Carvajal Ramos,20,Right Back,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,16532,Daniel Olmo Carvajal,21,Left Wing,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,4127,David Raya Martin,13,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,31953,Eric García Martret,3,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,6748,Ferrán Torres García,11,Right Wing,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,35641,Hugo Guillamón Sanmartín,15,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,5211,Jordi Alba Ramos,18,Left Back,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,5199,Jorge Resurrección Merodio,8,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,5719,Marco Asensio Willemsen,10,Center Forward,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,6840,Marcos Llorente Moreno,6,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,68574,Nicholas Williams Arthuer,12,Right Wing,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,133353,Pablo Martín Páez Gavira,9,Right Center Midfield,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,6720,Pablo Sarabia García,22,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,6892,Pau Francisco Torres,4,Left Center Back,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,30486,Pedro González López,26,Left Center Midfield,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,9843,Robert Lynch Sanchez,1,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,6765,Rodrigo Hernández Cascante,16,Right Center Back,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,5203,Sergio Busquets i Burgos,5,Center Defensive Midfield,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,11748,Unai Simón Mendibil,23,Goalkeeper,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,50494,Yeremy Jesús Pino Santos,17,Unknown,False,statsbomb_open_data,2026-05-04T01:42:55.630428
+3857255,2022,2022-12-01,772,Spain,3477,Álvaro Borja Morata Martín,7,Center Forward,True,statsbomb_open_data,2026-05-04T01:42:55.630428
+3869219,2022,2022-12-05,785,Croatia,5460,Andrej Kramarić,9,Right Wing,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,8654,Ante Budimir,17,Center Forward,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,11127,Borna Barišić,3,Left Back,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,7693,Bruno Petković,16,Center Forward,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,3471,Dejan Lovren,6,Right Center Back,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,5468,Domagoj Vida,21,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,16531,Dominik Livaković,1,Goalkeeper,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,5474,Ivan Perišić,4,Left Wing,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,28835,Ivica Ivušić,23,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,29342,Ivo Grbić,12,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,29163,Josip Juranović,22,Right Back,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,37148,Josip Šutalo,24,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,33018,Joško Gvardiol,20,Left Center Back,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,32602,Kristijan Jakić,26,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,28914,Lovro Majer,7,Right Center Midfield,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,5463,Luka Modrić,10,Right Center Midfield,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,39490,Luka Sučić,25,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,5469,Marcelo Brozović,11,Center Defensive Midfield,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,11603,Mario Pašalić,15,Left Wing,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,22041,Marko Livaja,14,Center Forward,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,32689,Martin Erlić,5,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,5456,Mateo Kovačić,8,Left Center Midfield,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,16527,Mislav Oršić,18,Left Wing,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,785,Croatia,3441,Nikola Vlašić,13,Left Center Midfield,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,37208,Ao Tanaka,17,Left Defensive Midfield,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,38285,Ayase Ueda,21,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,9411,Daichi Kamada,15,Left Wing,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,30628,Daizen Maeda,25,Center Forward,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,29366,Daniel Schmidt,23,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,3175,Eiji Kawashima,1,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,5693,Gaku Shibasaki,7,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,37221,Hidemasa Morita,13,Left Defensive Midfield,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,95272,Hiroki Ito,26,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,3530,Hiroki Sakai,19,Left Wing,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,23527,Junya Ito,14,Right Wing Back,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,37211,Kaoru Mitoma,9,Left Wing Back,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,3300,Maya Yoshida,22,Center Back,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,37209,Miki Yamane,2,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,8361,Ritsu Doan,8,Right Wing,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,37215,Shogo Taniguchi,3,Left Center Back,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,100436,Shuto Machino,20,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,25719,Shūichi Gonda,12,Goalkeeper,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,23730,Takehiro Tomiyasu,16,Right Center Back,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,8949,Takuma Asano,18,Center Forward,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,8776,Takumi Minamino,10,Right Wing,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,23721,Wataru Endo,6,Right Defensive Midfield,True,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,37122,Yuki Soma,24,Unknown,False,statsbomb_open_data,2023-03-18T12:56:12.567784
+3869219,2022,2022-12-05,778,Japan,5690,Yuto Nagatomo,5,Left Wing Back,True,statsbomb_open_data,2023-03-18T12:56:12.567784

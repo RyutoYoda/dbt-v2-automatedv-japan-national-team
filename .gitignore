@@ -1,0 +1,13 @@
+.venv/
+.env
+.env.*
+!.env.example
+.dbt/
+target/
+dbt_packages/
+logs/
+profiles.yml
+*.duckdb
+*.sqlite
+__pycache__/
+.DS_Store

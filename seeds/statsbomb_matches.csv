@@ -1,0 +1,5 @@
+match_id,season_id,season_name,match_date,kick_off,competition_id,competition_name,home_team_id,home_team_name,home_score,away_team_id,away_team_name,away_score,stage_name,stadium_name,record_source,loaded_at
+3857284,106,2022,2022-11-23,13:00:00.000,43,FIFA World Cup,770,Germany,1,778,Japan,2,Group Stage,Sheikh Khalifa International Stadium,statsbomb_open_data,2026-05-04T01:41:05.435
+3857295,106,2022,2022-11-27,10:00:00.000,43,FIFA World Cup,778,Japan,0,795,Costa Rica,1,Group Stage,Ahmad bin Ali Stadium,statsbomb_open_data,2026-05-04T01:46:01.531091
+3857255,106,2022,2022-12-01,19:00:00.000,43,FIFA World Cup,778,Japan,2,772,Spain,1,Group Stage,Sheikh Khalifa International Stadium,statsbomb_open_data,2026-05-04T01:42:55.630428
+3869219,106,2022,2022-12-05,17:00:00.000,43,FIFA World Cup,778,Japan,1,785,Croatia,1,Round of 16,Al Janoub Stadium,statsbomb_open_data,2023-03-18T12:56:12.567784

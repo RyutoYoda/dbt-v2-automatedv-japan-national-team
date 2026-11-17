@@ -1,0 +1,112 @@
+event_id,match_id,period,minute,second,timestamp,team_id,team_name,player_id,player_name,shot_type,shot_outcome,shot_xg,record_source,loaded_at
+82468ec3-39a3-4a2a-8876-f7444e4d18d6,3857255,1,6,3,00:06:03.195,772,Spain,5203,Sergio Busquets i Burgos,Open Play,Off T,0.03268242,statsbomb_open_data,2026-05-04T01:42:55.630428
+06f800a8-83c4-4024-a82e-c6fc0b33af5e,3857255,1,7,12,00:07:12.668,778,Japan,23527,Junya Ito,Open Play,Off T,0.04214545,statsbomb_open_data,2026-05-04T01:42:55.630428
+9c33b0de-c433-49e8-980d-cd5eff16f5d0,3857255,1,8,52,00:08:52.994,772,Spain,3477,Álvaro Borja Morata Martín,Open Play,Saved,0.06376064,statsbomb_open_data,2026-05-04T01:42:55.630428
+9b897300-f3b0-4bdf-bbb4-a3a31cbe616d,3857255,1,11,0,00:11:00.474,772,Spain,3477,Álvaro Borja Morata Martín,Open Play,Goal,0.33106714,statsbomb_open_data,2026-05-04T01:42:55.630428
+91c0f01d-e57d-456a-ad9d-eaa9974a9728,3857255,1,22,34,00:22:34.550,772,Spain,3477,Álvaro Borja Morata Martín,Open Play,Saved,0.10093839,statsbomb_open_data,2026-05-04T01:42:55.630428
+5d9ae612-b0f2-4e38-ad91-1bca50a5c65b,3857255,1,35,50,00:35:50.034,778,Japan,9411,Daichi Kamada,Open Play,Blocked,0.03356069,statsbomb_open_data,2026-05-04T01:42:55.630428
+e0173ae5-f487-4d33-8543-dbfe98355b39,3857255,1,41,54,00:41:54.186,772,Spain,16532,Daniel Olmo Carvajal,Open Play,Blocked,0.10385344,statsbomb_open_data,2026-05-04T01:42:55.630428
+bc946af5-84cd-4f04-a439-78394d428a5a,3857255,2,47,48,00:02:48.337,778,Japan,8361,Ritsu Doan,Open Play,Goal,0.027777622,statsbomb_open_data,2026-05-04T01:42:55.630428
+62233fb1-7200-49ca-aa10-948d071008f0,3857255,2,50,14,00:05:14.187,778,Japan,37208,Ao Tanaka,Open Play,Goal,0.87261814,statsbomb_open_data,2026-05-04T01:42:55.630428
+0e9861a9-0c0f-4398-ba07-9b56b5696d97,3857255,2,69,50,00:24:50.622,778,Japan,8949,Takuma Asano,Open Play,Off T,0.13121767,statsbomb_open_data,2026-05-04T01:42:55.630428
+c1c5d527-034b-44f2-8b75-627ddf38dc88,3857255,2,73,12,00:28:12.735,772,Spain,5719,Marco Asensio Willemsen,Open Play,Blocked,0.016301522,statsbomb_open_data,2026-05-04T01:42:55.630428
+4c5377bd-6c6a-4e50-b475-6fea2a226c95,3857255,2,79,18,00:34:18.253,772,Spain,16532,Daniel Olmo Carvajal,Open Play,Blocked,0.01649772,statsbomb_open_data,2026-05-04T01:42:55.630428
+526ba5d5-9a4a-4eb6-8703-2e38c0b4e3a5,3857255,2,82,21,00:37:21.510,778,Japan,29595,Ko Itakura,Open Play,Saved,0.0504811,statsbomb_open_data,2026-05-04T01:42:55.630428
+c0d1a79f-f6c7-46a5-a8d7-e78d77573103,3857255,2,84,30,00:39:30.818,772,Spain,5719,Marco Asensio Willemsen,Open Play,Blocked,0.02842248,statsbomb_open_data,2026-05-04T01:42:55.630428
+1ffc5e2a-e9bd-437e-8ef2-f8a715e4b132,3857255,2,88,28,00:43:28.528,772,Spain,5211,Jordi Alba Ramos,Open Play,Blocked,0.0241939,statsbomb_open_data,2026-05-04T01:42:55.630428
+3f03f538-4d45-4190-8de2-2ad65dd0663a,3857255,2,88,49,00:43:49.411,772,Spain,5719,Marco Asensio Willemsen,Open Play,Saved,0.007735879,statsbomb_open_data,2026-05-04T01:42:55.630428
+1280d6dd-09c8-485c-9fbd-371ac8726d57,3857255,2,89,8,00:44:08.352,772,Spain,16532,Daniel Olmo Carvajal,Open Play,Saved,0.12373556,statsbomb_open_data,2026-05-04T01:42:55.630428
+596f1016-203d-4a69-b0dc-daa09029b504,3857255,2,95,29,00:50:29.043,772,Spain,16532,Daniel Olmo Carvajal,Open Play,Off T,0.008523117,statsbomb_open_data,2026-05-04T01:42:55.630428
+7e46f061-099c-4501-8efe-703ce4de40ee,3857284,1,13,18,00:13:18.594,770,Germany,5579,Joshua Kimmich,Open Play,Blocked,0.022911863,statsbomb_open_data,2026-05-04T01:41:05.435
+69b20fdd-7d36-4c05-a6e8-5971274c6428,3857284,1,15,59,00:15:59.348,770,Germany,3167,Antonio Rüdiger,Open Play,Off T,0.026021937,statsbomb_open_data,2026-05-04T01:41:05.435
+56cf94b2-8ef0-4d98-a051-353ba06a7ecc,3857284,1,19,49,00:19:49.837,770,Germany,5579,Joshua Kimmich,Open Play,Saved,0.05193508,statsbomb_open_data,2026-05-04T01:41:05.435
+df4d0871-fea4-4a0c-a5b1-5c074c2a96b7,3857284,1,25,53,00:25:53.943,770,Germany,10287,İlkay Gündoğan,Open Play,Blocked,0.042519,statsbomb_open_data,2026-05-04T01:41:05.435
+127912cf-2ecc-43fa-a2f7-5ab3199f5c4d,3857284,1,27,31,00:27:31.094,770,Germany,10287,İlkay Gündoğan,Open Play,Saved,0.041637745,statsbomb_open_data,2026-05-04T01:41:05.435
+dbb421a4-892d-4186-90de-0c9e26cd8367,3857284,1,28,39,00:28:39.674,770,Germany,10287,İlkay Gündoğan,Open Play,Blocked,0.12241382,statsbomb_open_data,2026-05-04T01:41:05.435
+c18ab9c8-d37e-4194-a90a-f06274614fce,3857284,1,32,35,00:32:35.887,770,Germany,10287,İlkay Gündoğan,Penalty,Goal,0.7835,statsbomb_open_data,2026-05-04T01:41:05.435
+dfd8ea23-e92c-4b57-bfd0-1617a8253887,3857284,1,37,32,00:37:32.237,770,Germany,8400,Serge Gnabry,Open Play,Blocked,0.028658802,statsbomb_open_data,2026-05-04T01:41:05.435
+3c0f49a1-5848-46dc-b220-8905aa359fdc,3857284,1,37,47,00:37:47.877,770,Germany,39565,Jamal Musiala,Open Play,Blocked,0.03933018,statsbomb_open_data,2026-05-04T01:41:05.435
+d96f5947-c4e7-4d0f-95d7-cb4c0dfa6dfe,3857284,1,40,37,00:40:37.998,770,Germany,10287,İlkay Gündoğan,Open Play,Saved,0.031919174,statsbomb_open_data,2026-05-04T01:41:05.435
+35865f9d-91db-4a46-87bf-b3be4d11c86d,3857284,1,41,5,00:41:05.150,770,Germany,5579,Joshua Kimmich,Open Play,Off T,0.05113006,statsbomb_open_data,2026-05-04T01:41:05.435
+a54fab01-3f2e-4d5a-961f-16f3e8616662,3857284,1,44,29,00:44:29.158,770,Germany,39565,Jamal Musiala,Open Play,Off T,0.06614002,statsbomb_open_data,2026-05-04T01:41:05.435
+b8c140cf-6136-4dfb-821c-97c7ce3d28ec,3857284,2,46,34,00:01:34.980,770,Germany,8400,Serge Gnabry,Open Play,Post,0.013327111,statsbomb_open_data,2026-05-04T01:41:05.435
+b5d15296-4743-46da-b0b2-690196350004,3857284,1,48,33,00:48:33.438,770,Germany,5579,Joshua Kimmich,Open Play,Saved,0.047906045,statsbomb_open_data,2026-05-04T01:41:05.435
+547ca4c3-bd06-4274-a82b-98622617e165,3857284,1,48,35,00:48:35.708,770,Germany,8400,Serge Gnabry,Open Play,Wayward,0.21508263,statsbomb_open_data,2026-05-04T01:41:05.435
+be213c96-cdf9-4a6a-a1c5-4e8c33966c0b,3857284,2,49,41,00:04:41.180,778,Japan,9411,Daichi Kamada,Open Play,Blocked,0.06444196,statsbomb_open_data,2026-05-04T01:41:05.435
+af3d2269-1129-429d-8148-0d590c3da45a,3857284,1,50,28,00:50:28.974,778,Japan,30628,Daizen Maeda,Open Play,Off T,0.07710243,statsbomb_open_data,2026-05-04T01:41:05.435
+69769c3b-5da5-4858-819d-cacaa9b54faf,3857284,2,50,46,00:05:46.102,770,Germany,39565,Jamal Musiala,Open Play,Off T,0.15860753,statsbomb_open_data,2026-05-04T01:41:05.435
+9a276feb-2c82-4d61-97cd-114c0bb962df,3857284,2,57,6,00:12:06.540,778,Japan,8949,Takuma Asano,Open Play,Off T,0.06737846,statsbomb_open_data,2026-05-04T01:41:05.435
+d29e7223-7bc6-41bc-bb90-a67d9b8758bb,3857284,2,59,14,00:14:14.020,770,Germany,10287,İlkay Gündoğan,Open Play,Post,0.10696415,statsbomb_open_data,2026-05-04T01:41:05.435
+0aded50a-5e7b-4b88-9a61-af5971674b2f,3857284,2,60,18,00:15:18.159,778,Japan,8949,Takuma Asano,Open Play,Off T,0.06586899,statsbomb_open_data,2026-05-04T01:41:05.435
+7cec90dd-6f0f-48db-8475-02056b3807d6,3857284,2,65,30,00:20:30.136,778,Japan,8949,Takuma Asano,Open Play,Blocked,0.029970925,statsbomb_open_data,2026-05-04T01:41:05.435
+5c54df63-0251-46f6-9130-998568670772,3857284,2,66,2,00:21:02.621,778,Japan,29595,Ko Itakura,Open Play,Blocked,0.034016185,statsbomb_open_data,2026-05-04T01:41:05.435
+2abe26e9-c948-497e-9fef-82f13a7f4c18,3857284,2,67,51,00:22:51.279,778,Japan,8949,Takuma Asano,Open Play,Blocked,0.0360808,statsbomb_open_data,2026-05-04T01:41:05.435
+522174e3-990f-4878-849d-24499f66c499,3857284,2,69,46,00:24:46.474,770,Germany,8804,Jonas Hofmann,Open Play,Saved,0.32657883,statsbomb_open_data,2026-05-04T01:41:05.435
+deecac76-83d8-4183-bc1a-f3a1f8754f98,3857284,2,69,51,00:24:51.856,770,Germany,8400,Serge Gnabry,Open Play,Saved,0.02483029,statsbomb_open_data,2026-05-04T01:41:05.435
+f9a875b9-469c-4fd6-aa1d-5daf58f2fb5d,3857284,2,70,2,00:25:02.812,770,Germany,8400,Serge Gnabry,Open Play,Saved,0.11167552,statsbomb_open_data,2026-05-04T01:41:05.435
+60937c94-36e7-4cc1-9041-1be1cc64f688,3857284,2,70,4,00:25:04.702,770,Germany,8400,Serge Gnabry,Open Play,Saved,0.0550312,statsbomb_open_data,2026-05-04T01:41:05.435
+e8de340d-68cc-4d20-b80e-48a15c1757f6,3857284,2,72,39,00:27:39.505,778,Japan,23527,Junya Ito,Open Play,Saved,0.06845111,statsbomb_open_data,2026-05-04T01:41:05.435
+82a8b614-d3d3-43d6-afac-73df86ffda65,3857284,2,72,40,00:27:40.942,778,Japan,3530,Hiroki Sakai,Open Play,Off T,0.28772855,statsbomb_open_data,2026-05-04T01:41:05.435
+2bf95ac5-c51d-4fb6-824b-6929b46425cb,3857284,2,74,45,00:29:45.029,778,Japan,8776,Takumi Minamino,Open Play,Saved,0.013784891,statsbomb_open_data,2026-05-04T01:41:05.435
+d1212057-3deb-4def-adea-6624f38f7950,3857284,2,74,46,00:29:46.313,778,Japan,8361,Ritsu Doan,Open Play,Goal,0.4777511,statsbomb_open_data,2026-05-04T01:41:05.435
+80aaab43-e46c-4cfd-8bbc-199d515db921,3857284,2,79,46,00:34:46.552,770,Germany,3167,Antonio Rüdiger,Open Play,Off T,0.18550046,statsbomb_open_data,2026-05-04T01:41:05.435
+d71bc1d5-1501-4fe6-9ae8-a490371ee93e,3857284,2,82,42,00:37:42.506,778,Japan,8949,Takuma Asano,Open Play,Goal,0.02668418,statsbomb_open_data,2026-05-04T01:41:05.435
+7fc648cb-979b-45be-bd04-d6e9e969acd1,3857284,2,89,16,00:44:16.162,770,Germany,8546,Niclas Füllkrug,Open Play,Off T,0.031593546,statsbomb_open_data,2026-05-04T01:41:05.435
+aa3266e6-5314-4577-971f-56c76b7d4f28,3857284,2,93,50,00:48:50.477,770,Germany,3167,Antonio Rüdiger,Open Play,Off T,0.017847534,statsbomb_open_data,2026-05-04T01:41:05.435
+fa3b646a-a38f-456c-ae47-678e3be6d54b,3857284,2,94,42,00:49:42.890,770,Germany,6324,Leon Goretzka,Open Play,Off T,0.088851534,statsbomb_open_data,2026-05-04T01:41:05.435
+86f3e7d6-98d3-4e9e-ae01-55ee35dd93bf,3857284,2,97,16,00:52:16.977,770,Germany,6322,Niklas Süle,Open Play,Blocked,0.07610536,statsbomb_open_data,2026-05-04T01:41:05.435
+2150f4a1-11c4-4273-ace0-3b9f9483287f,3857295,1,2,18,00:02:18.810,778,Japan,8361,Ritsu Doan,Open Play,Wayward,0.015573137,statsbomb_open_data,2026-05-04T01:46:01.531091
+a4a5da42-0a22-4fd7-9408-fc83c588f603,3857295,1,3,36,00:03:36.304,795,Costa Rica,132497,Gerson Torres Barrantes,Open Play,Wayward,0.01353695,statsbomb_open_data,2026-05-04T01:46:01.531091
+cb38d9a0-e2fc-4103-b7eb-25b54cbcc69e,3857295,1,34,14,00:34:14.284,795,Costa Rica,5600,Francisco Javier Calvo Quesada,Open Play,Blocked,0.014244432,statsbomb_open_data,2026-05-04T01:46:01.531091
+6e86c991-a8bd-4041-802a-dc291e94ab54,3857295,1,34,18,00:34:18.212,795,Costa Rica,5581,Joel Nathaniel Campbell Samuels,Open Play,Off T,0.051288527,statsbomb_open_data,2026-05-04T01:46:01.531091
+e4a676fe-1397-48c1-8aca-6c1780b66a22,3857295,1,37,45,00:37:45.154,778,Japan,23721,Wataru Endo,Open Play,Blocked,0.03132781,statsbomb_open_data,2026-05-04T01:46:01.531091
+94534163-21ab-4b88-ae9e-4338f4a44dc6,3857295,2,45,25,00:00:25.265,778,Japan,37221,Hidemasa Morita,Open Play,Saved,0.09737273,statsbomb_open_data,2026-05-04T01:46:01.531091
+9d3af2e4-af04-400f-aaa2-603b43d53eba,3857295,2,45,28,00:00:28.048,778,Japan,8949,Takuma Asano,Open Play,Blocked,0.051375452,statsbomb_open_data,2026-05-04T01:46:01.531091
+1c2f2a54-2e26-4298-840f-1ae42f716b4a,3857295,2,47,9,00:02:09.699,778,Japan,23721,Wataru Endo,Open Play,Blocked,0.042255066,statsbomb_open_data,2026-05-04T01:46:01.531091
+79a770c1-3ec1-4ea5-b834-9a58ed3b3843,3857295,2,47,13,00:02:13.609,778,Japan,8949,Takuma Asano,Open Play,Saved,0.08747226,statsbomb_open_data,2026-05-04T01:46:01.531091
+c9896243-7ed2-4bc8-b843-8c8f26785909,3857295,2,49,26,00:04:26.757,778,Japan,29595,Ko Itakura,Open Play,Blocked,0.07774679,statsbomb_open_data,2026-05-04T01:46:01.531091
+ac8028fd-d64c-4c42-9434-91109755b4c4,3857295,2,49,29,00:04:29.192,778,Japan,23721,Wataru Endo,Open Play,Blocked,0.04122181,statsbomb_open_data,2026-05-04T01:46:01.531091
+e4d8f973-7517-497c-8ff8-dcd54dde1da1,3857295,2,56,21,00:11:21.360,778,Japan,37122,Yuki Soma,Open Play,Wayward,0.022210024,statsbomb_open_data,2026-05-04T01:46:01.531091
+5c777610-a1b0-48e9-a812-56700c22a73f,3857295,2,62,40,00:17:40.902,778,Japan,37122,Yuki Soma,Free Kick,Off T,0.08557594,statsbomb_open_data,2026-05-04T01:46:01.531091
+edf74f91-d82b-4112-a643-af4832f68dbd,3857295,2,71,22,00:26:22.221,778,Japan,9411,Daichi Kamada,Free Kick,Blocked,0.10029054,statsbomb_open_data,2026-05-04T01:46:01.531091
+0491c47e-916f-4501-8833-db9188ca2525,3857295,2,71,24,00:26:24.653,778,Japan,37122,Yuki Soma,Open Play,Blocked,0.027111016,statsbomb_open_data,2026-05-04T01:46:01.531091
+52d08b93-5f43-4a98-9710-a1441d063e98,3857295,2,80,8,00:35:08.241,795,Costa Rica,130185,Keysher Fuller Spence,Open Play,Goal,0.120298475,statsbomb_open_data,2026-05-04T01:46:01.531091
+085c9b03-1324-4a89-9bfd-8a93f24bb907,3857295,2,87,48,00:42:48.108,778,Japan,9411,Daichi Kamada,Open Play,Saved,0.09400092,statsbomb_open_data,2026-05-04T01:46:01.531091
+3e282518-80cc-4cba-a8bf-f978a3bdc68b,3869219,1,2,9,00:02:09.250,778,Japan,37215,Shogo Taniguchi,Open Play,Off T,0.11361285,statsbomb_open_data,2023-03-18T12:56:12.567784
+d2902ca7-330f-40ca-bdcc-80ebce314510,3869219,1,7,31,00:07:31.226,785,Croatia,5474,Ivan Perišić,Open Play,Saved,0.05943511,statsbomb_open_data,2023-03-18T12:56:12.567784
+05b85723-782e-406a-8111-015340f46439,3869219,1,7,34,00:07:34.461,785,Croatia,5460,Andrej Kramarić,Open Play,Blocked,0.17775308,statsbomb_open_data,2023-03-18T12:56:12.567784
+84a3ecd6-bec2-4e73-96a2-682de9882869,3869219,1,23,47,00:23:47.696,785,Croatia,33018,Joško Gvardiol,Open Play,Off T,0.061746918,statsbomb_open_data,2023-03-18T12:56:12.567784
+edc46c5b-cc9d-4a0d-b880-d880335d6f27,3869219,1,40,7,00:40:07.606,778,Japan,9411,Daichi Kamada,Open Play,Wayward,0.08994952,statsbomb_open_data,2023-03-18T12:56:12.567784
+a17c568a-4df5-4c2f-81e2-4cc89d924ae8,3869219,1,42,54,00:42:54.954,778,Japan,30628,Daizen Maeda,Open Play,Goal,0.45874894,statsbomb_open_data,2023-03-18T12:56:12.567784
+97734f34-6e02-4e86-b03d-c9d858dd8c92,3869219,2,45,27,00:00:27.301,778,Japan,9411,Daichi Kamada,Open Play,Off T,0.03904812,statsbomb_open_data,2023-03-18T12:56:12.567784
+f37a0c66-833e-4fe3-ac62-b3841656a294,3869219,2,48,13,00:03:13.466,785,Croatia,5456,Mateo Kovačić,Open Play,Off T,0.02993381,statsbomb_open_data,2023-03-18T12:56:12.567784
+5552d4ee-1ebc-4ec4-9f36-6a0524b2cb44,3869219,2,49,22,00:04:22.460,778,Japan,37221,Hidemasa Morita,Open Play,Wayward,0.041140273,statsbomb_open_data,2023-03-18T12:56:12.567784
+5ce4d362-ebd6-4ea8-8544-e47d5f5f2454,3869219,2,54,54,00:09:54.754,785,Croatia,5474,Ivan Perišić,Open Play,Goal,0.02684295,statsbomb_open_data,2023-03-18T12:56:12.567784
+74935b33-b8d3-4ab4-919d-9a9ed80a3bcd,3869219,2,56,56,00:11:56.507,778,Japan,23721,Wataru Endo,Open Play,Saved,0.019910807,statsbomb_open_data,2023-03-18T12:56:12.567784
+ddddef93-1105-425d-99f4-011605e72ad4,3869219,2,59,48,00:14:48.197,778,Japan,23721,Wataru Endo,Open Play,Blocked,0.020528734,statsbomb_open_data,2023-03-18T12:56:12.567784
+cda7fa73-f09c-46df-8e56-f4b6baa17185,3869219,2,59,49,00:14:49.656,778,Japan,37221,Hidemasa Morita,Open Play,Blocked,0.052081473,statsbomb_open_data,2023-03-18T12:56:12.567784
+bb569056-5824-4a84-9bf7-098df409c1fb,3869219,2,59,52,00:14:52.563,778,Japan,8361,Ritsu Doan,Open Play,Saved,0.056113943,statsbomb_open_data,2023-03-18T12:56:12.567784
+45501bff-d6b1-4cb6-a6b3-458e422a236a,3869219,2,62,13,00:17:13.656,785,Croatia,5463,Luka Modrić,Open Play,Saved,0.031055314,statsbomb_open_data,2023-03-18T12:56:12.567784
+31749268-4467-46db-b470-7e9125d6d734,3869219,2,65,32,00:20:32.622,785,Croatia,5474,Ivan Perišić,Open Play,Blocked,0.018378427,statsbomb_open_data,2023-03-18T12:56:12.567784
+c0055f4a-4e53-4244-a1b0-af09963873fd,3869219,2,65,52,00:20:52.511,785,Croatia,5460,Andrej Kramarić,Open Play,Blocked,0.018472007,statsbomb_open_data,2023-03-18T12:56:12.567784
+605589a6-a83f-4533-b88f-a8e775efa581,3869219,2,65,53,00:20:53.694,785,Croatia,8654,Ante Budimir,Open Play,Off T,0.10111922,statsbomb_open_data,2023-03-18T12:56:12.567784
+3e14ff6c-b675-4433-b70b-f1362675d101,3869219,2,73,43,00:28:43.520,785,Croatia,11603,Mario Pašalić,Open Play,Off T,0.035465226,statsbomb_open_data,2023-03-18T12:56:12.567784
+a99de16f-d5a2-4386-82e7-51dca208bd8c,3869219,2,76,37,00:31:37.391,785,Croatia,5474,Ivan Perišić,Open Play,Blocked,0.030077945,statsbomb_open_data,2023-03-18T12:56:12.567784
+78a794a1-c48c-4699-904a-5ca28cb9cc15,3869219,2,85,42,00:40:42.164,785,Croatia,11603,Mario Pašalić,Open Play,Off T,0.052599985,statsbomb_open_data,2023-03-18T12:56:12.567784
+0ac4b920-e24a-478f-902c-d3793cf26db0,3869219,3,91,35,00:01:35.883,778,Japan,37215,Shogo Taniguchi,Open Play,Off T,0.0608747,statsbomb_open_data,2023-03-18T12:56:12.567784
+23c0f102-912d-4b11-93b7-08f61a961924,3869219,3,100,24,00:10:24.472,785,Croatia,5474,Ivan Perišić,Open Play,Blocked,0.07439702,statsbomb_open_data,2023-03-18T12:56:12.567784
+9373957f-01f1-44d3-a2af-6a412ae43caf,3869219,3,100,26,00:10:26.850,785,Croatia,11127,Borna Barišić,Open Play,Blocked,0.015196718,statsbomb_open_data,2023-03-18T12:56:12.567784
+e1912d47-5dce-4b37-8d31-b6e9482be999,3869219,3,104,5,00:14:05.183,778,Japan,37211,Kaoru Mitoma,Open Play,Saved,0.054134306,statsbomb_open_data,2023-03-18T12:56:12.567784
+142a9ff0-352e-46d8-9bef-e8c1372b8f37,3869219,3,104,9,00:14:09.554,778,Japan,23721,Wataru Endo,Open Play,Blocked,0.02615668,statsbomb_open_data,2023-03-18T12:56:12.567784
+f68691b4-7768-4512-9505-335fcb58785c,3869219,3,104,20,00:14:20.232,778,Japan,8776,Takumi Minamino,Open Play,Blocked,0.03667642,statsbomb_open_data,2023-03-18T12:56:12.567784
+8aafb6ab-26fa-4ccb-87b7-a9c4e9aae35b,3869219,4,113,42,00:08:42.689,785,Croatia,22041,Marko Livaja,Open Play,Saved,0.047236525,statsbomb_open_data,2023-03-18T12:56:12.567784
+7e8a4838-4396-44cb-af8e-51df3abdd7b8,3869219,5,120,4,00:00:04.673,778,Japan,8776,Takumi Minamino,Penalty,Saved,0.7835,statsbomb_open_data,2023-03-18T12:56:12.567784
+69de8840-7050-44c6-a13a-aac71b5f6cef,3869219,4,120,10,00:15:10.305,785,Croatia,16527,Mislav Oršić,Open Play,Blocked,0.009676031,statsbomb_open_data,2023-03-18T12:56:12.567784
+5e58555c-4442-4907-8029-0dbd3d58d2a3,3869219,4,120,18,00:15:18.610,785,Croatia,28914,Lovro Majer,Open Play,Off T,0.06501122,statsbomb_open_data,2023-03-18T12:56:12.567784
+a082197d-6235-4da0-92fc-a1aa9379bc0d,3869219,5,120,43,00:00:43.181,785,Croatia,3441,Nikola Vlašić,Penalty,Goal,0.7835,statsbomb_open_data,2023-03-18T12:56:12.567784
+bccd6f5b-3d78-448c-bde8-793467426a12,3869219,5,121,13,00:01:13.007,778,Japan,37211,Kaoru Mitoma,Penalty,Saved,0.7835,statsbomb_open_data,2023-03-18T12:56:12.567784
+54be1e85-59c1-43cd-8da4-26db10dcd2b7,3869219,5,121,52,00:01:52.710,785,Croatia,5469,Marcelo Brozović,Penalty,Goal,0.7835,statsbomb_open_data,2023-03-18T12:56:12.567784
+2e48e56e-491c-4194-865d-be0b40fafb69,3869219,5,122,33,00:02:33.182,778,Japan,8949,Takuma Asano,Penalty,Goal,0.7835,statsbomb_open_data,2023-03-18T12:56:12.567784
+f33dea9d-c828-4298-9983-d63a2db7557b,3869219,5,123,13,00:03:13.266,785,Croatia,22041,Marko Livaja,Penalty,Post,0.7835,statsbomb_open_data,2023-03-18T12:56:12.567784
+2cdf3402-4fcf-45ef-9d91-8474453e45ad,3869219,5,123,50,00:03:50.000,778,Japan,3300,Maya Yoshida,Penalty,Saved,0.7835,statsbomb_open_data,2023-03-18T12:56:12.567784
+d38acc97-e85e-43e6-9798-dac321842497,3869219,5,124,28,00:04:28.587,785,Croatia,11603,Mario Pašalić,Penalty,Goal,0.7835,statsbomb_open_data,2023-03-18T12:56:12.567784
