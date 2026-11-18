@@ -12,6 +12,6 @@ select
     team.team_id,
     team.team_hk,
     attributes.team_name
-from {{ ref('hub_team') }} team
-join current_team_attributes attributes
+from {{ ref('hub_team') }} as team
+join current_team_attributes as attributes
   on team.team_hk = attributes.team_hk

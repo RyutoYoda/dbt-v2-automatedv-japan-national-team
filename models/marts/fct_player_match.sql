@@ -18,12 +18,12 @@ select
     lineup.jersey_number,
     lineup.is_starter,
     1 as lineup_record_count
-from {{ ref('link_player_match') }} link
-join {{ ref('hub_player') }} player
+from {{ ref('link_player_match') }} as link
+join {{ ref('hub_player') }} as player
   on link.player_hk = player.player_hk
-join {{ ref('hub_match') }} match
+join {{ ref('hub_match') }} as match
   on link.match_hk = match.match_hk
-join {{ ref('hub_team') }} team
+join {{ ref('hub_team') }} as team
   on link.team_hk = team.team_hk
-join current_lineup_attributes lineup
+join current_lineup_attributes as lineup
   on link.player_match_hk = lineup.player_match_hk

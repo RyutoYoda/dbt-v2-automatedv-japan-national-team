@@ -17,6 +17,6 @@ select
     p.player_hk,
     md5(upper(trim(cast(l.match_id as string))) || '|' || upper(trim(cast(l.team_id as string))) || '|' || upper(trim(cast(l.player_id as string)))) as player_match_hk,
     md5(coalesce(cast(l.jersey_number as string), '') || '|' || coalesce(l.position_name, '') || '|' || coalesce(cast(l.is_starter as string), '')) as lineup_hashdiff
-from {{ ref('statsbomb_lineups') }} l
-left join {{ ref('v_stg_players') }} p
+from {{ ref('statsbomb_lineups') }} as l
+left join {{ ref('v_stg_players') }} as p
     on cast(l.player_id as string) = p.player_source_id

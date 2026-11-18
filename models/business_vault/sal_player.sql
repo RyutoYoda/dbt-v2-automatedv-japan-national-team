@@ -17,8 +17,8 @@ player_source_map as (
             partition by same_as.player_hk
             order by source.player_source_id
         ) as source_rank
-    from {{ ref('link_same_as_player') }} same_as
-    join {{ ref('hub_player_source') }} source
+    from {{ ref('link_same_as_player') }} as same_as
+    join {{ ref('hub_player_source') }} as source
       on same_as.player_source_hk = source.player_source_hk
 )
 select
@@ -27,9 +27,9 @@ select
     attributes.player_name,
     attributes.training_registry_id,
     source.player_source_id as statsbomb_player_id
-from {{ ref('hub_player') }} player
-join current_player_attributes attributes
+from {{ ref('hub_player') }} as player
+join current_player_attributes as attributes
   on player.player_hk = attributes.player_hk
-left join player_source_map source
+left join player_source_map as source
   on player.player_hk = source.player_hk
  and source.source_rank = 1

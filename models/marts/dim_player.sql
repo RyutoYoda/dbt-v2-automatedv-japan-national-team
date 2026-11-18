@@ -6,6 +6,6 @@ select
     tp.first_observed_match_date,
     tp.last_observed_match_date,
     tp.tournament_name
-from {{ ref('sal_player') }} p
-left join {{ ref('player_tournament_periods') }} tp
+from {{ ref('sal_player') }} as p
+left join {{ ref('player_tournament_periods') }} as tp
   on p.player_hk = tp.player_hk

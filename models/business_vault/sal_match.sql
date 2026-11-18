@@ -18,6 +18,6 @@ select
     attributes.away_score,
     attributes.stage_name,
     attributes.stadium_name
-from {{ ref('hub_match') }} match
-join current_match_attributes attributes
+from {{ ref('hub_match') }} as match
+join current_match_attributes as attributes
   on match.match_hk = attributes.match_hk

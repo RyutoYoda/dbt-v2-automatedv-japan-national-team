@@ -9,7 +9,7 @@ select
     min(m.match_date) as effectivity_date,
     max(l.load_datetime) as load_datetime,
     max(l.record_source) as record_source
-from {{ ref('v_stg_lineups') }} l
-join {{ ref('v_stg_matches') }} m
+from {{ ref('v_stg_lineups') }} as l
+join {{ ref('v_stg_matches') }} as m
   on l.match_id = m.match_id
 group by l.player_hk, m.competition_hk

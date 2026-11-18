@@ -12,12 +12,12 @@ select
     shot.shot_xg,
     case when lower(shot.shot_outcome) = 'goal' then 1 else 0 end as goal_count,
     1 as shot_count
-from {{ ref('nhl_shot_event') }} shot
-left join {{ ref('link_same_as_player') }} same_as
+from {{ ref('nhl_shot_event') }} as shot
+left join {{ ref('link_same_as_player') }} as same_as
   on shot.player_source_hk = same_as.player_source_hk
-left join {{ ref('hub_player') }} player
+left join {{ ref('hub_player') }} as player
   on same_as.player_hk = player.player_hk
-join {{ ref('hub_match') }} match
+join {{ ref('hub_match') }} as match
   on shot.match_hk = match.match_hk
-join {{ ref('hub_team') }} team
+join {{ ref('hub_team') }} as team
   on shot.team_hk = team.team_hk
