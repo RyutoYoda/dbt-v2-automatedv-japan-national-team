@@ -8,7 +8,8 @@ This project teaches the Raw Vault and Business Vault patterns from the Japan na
 - Link Satellites and Effectivity Satellites
 - Non-historized Links for match events
 - Hub-it-out and Same-as Links for source-specific player IDs and identity resolution
-- A business-facing match mart built from the vault
+- A dimensional mart with player, match, and team dimensions and facts at match and shot grain
+- A deployable Databricks AI/BI dashboard that follows the models through to analysis
 - dbt v2 static analysis, model contracts, and column-level lineage
 
 The source fixtures cover Japan's 2022 FIFA World Cup matches in StatsBomb Open Data. A second, clearly labeled `training_roster_registry` identifier is generated for each source player so the project can demonstrate BKCC and Same-as Link patterns; it is **not** a real JFA identifier or JFA feed. The fixture refresh script only selects the 2022 tournament.
@@ -60,9 +61,37 @@ The checked-in seeds are the Japan matches from the 2022 FIFA World Cup. To refr
 |---|---|---|
 | Seeds | `statsbomb_matches`, `statsbomb_lineups`, `statsbomb_shots`, `training_player_identity_map` | Small reproducible input snapshots |
 | Staging | `v_stg_*` | Normalize source fields and calculate AutomateDV hash keys/hashdiffs |
-| Raw Vault | `hub_*`, `link_*`, `sat_*`, `eff_sat_*`, `nhl_*` | Preserve source keys, relationships, history, and match events |
-| Business Vault | `sal_player`, `player_tournament_periods` | Resolve identities and derive observed participation periods |
-| Marts | `fct_japan_match_results`, `dim_player` | Consumer-friendly examples |
+| Raw Vault | `hub_*`, `link_*`, `sat_*`, `eff_sat_*`, `nhl_*` | Preserve source keys, relationships, history, team names, and match events |
+| Business Vault | `sal_player`, `sal_match`, `sal_team`, `player_tournament_periods` | Resolve identities and expose current descriptive state and derived periods |
+| Marts | `dim_player`, `dim_match`, `dim_team`, `fct_player_match`, `fct_player_shots`, `fct_japan_match_results` | Star-schema examples for BI and dashboard use |
+
+## Dimensional model and dashboard
+
+The marts expose separate dimensions and facts with explicit grains and join keys:
+
+| Mart | Grain | Join keys |
+|---|---|---|
+| `fct_player_match` | One player, match, and team lineup record | `player_id` → `dim_player.player_id`; `match_id` → `dim_match.match_id`; `team_id` → `dim_team.team_id` |
+| `fct_player_shots` | One shot event | Same three dimension keys; player may be null when the source has no player attribution |
+| `fct_japan_match_results` | One Japan match | `match_id` → `dim_match.match_id` |
+
+`dashboards/samurai_blue_performance.lvdash.json` is a Databricks AI/BI dashboard definition. It includes match wins and goals, player lineup counts, shot outcomes, and expected goals by player. The dashboard datasets join facts to dimensions in SQL so the demo can be followed without manually rebuilding the Tableau/Databricks relationship canvas. The two player-level facts remain at their own grains to avoid repeating match-level scores across players.
+
+After building the dbt models, validate and deploy the dashboard as a Databricks bundle. Supply the workspace profile, catalog, SQL warehouse ID, and marts schema for your workspace:
+
+```bash
+databricks bundle validate -t dev --profile <profile> \
+  --var="warehouse_id=<warehouse-id>" \
+  --var="catalog_name=<catalog-name>" \
+  --var="marts_schema=DBT_VAULT_TRAINING_MARTS"
+
+databricks bundle deploy -t dev --profile <profile> \
+  --var="warehouse_id=<warehouse-id>" \
+  --var="catalog_name=<catalog-name>" \
+  --var="marts_schema=DBT_VAULT_TRAINING_MARTS"
+```
+
+In this demo, `marts_schema` is the project schema prefix plus `_MARTS`. Change it if `DATABRICKS_SCHEMA` is set to a different value. The dashboard JSON and bundle configuration contain no credentials.
 
 `eff_sat_player_competition` records each player's first and last observed lineup dates in the 2022 tournament. It does not claim to be the official squad appointment or contract period.
 

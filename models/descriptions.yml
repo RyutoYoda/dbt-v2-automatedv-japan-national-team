@@ -156,6 +156,8 @@ models:
         description: "レコードの取得元を示す識別子。"
       - name: team_hk
         description: "team_idから生成したTeam Hub用ハッシュキー。"
+      - name: team_hashdiff
+        description: "チーム名の変更検知に使うハッシュ差分。"
 
   - name: v_stg_player_competition
     description: "選手の大会参加期間を試合記録から集約し、選手・大会Linkと有効期間を作るビュー。"
@@ -375,6 +377,20 @@ models:
       - name: RECORD_SOURCE
         description: "Satelliteレコードのデータ起源。"
 
+  - name: sat_team
+    description: "Team Hubに従属し、チーム名の変更履歴を保持するSatellite。"
+    columns:
+      - name: TEAM_HK
+        description: "親となるTeam Hubのハッシュキー。"
+      - name: TEAM_HASHDIFF
+        description: "チーム属性の変更検知に使うハッシュ差分。"
+      - name: TEAM_NAME
+        description: "ソース上のチーム名。"
+      - name: LOAD_DATETIME
+        description: "Satelliteレコードのロード日時。"
+      - name: RECORD_SOURCE
+        description: "Satelliteレコードのデータ起源。"
+
   - name: eff_sat_player_competition
     description: "選手・大会Linkに従属するEffectivity Satellite。大会への参加有効期間を保持する。"
     columns:
@@ -408,6 +424,42 @@ models:
         description: "演習用選手台帳ID。"
       - name: statsbomb_player_id
         description: "StatsBomb側の選手識別子。"
+
+  - name: sal_match
+    description: "Match HubとSatelliteから最新の試合属性を組み立てるBusiness Vaultビュー。"
+    columns:
+      - name: match_id
+        description: "StatsBombの試合識別子。"
+      - name: match_hk
+        description: "Match Hubのハッシュキー。"
+      - name: match_date
+        description: "試合開催日。"
+      - name: season_name
+        description: "大会シーズン名。"
+      - name: competition_name
+        description: "大会名。"
+      - name: home_team_name
+        description: "ホームチーム名。"
+      - name: home_score
+        description: "ホームチームの得点。"
+      - name: away_team_name
+        description: "アウェイチーム名。"
+      - name: away_score
+        description: "アウェイチームの得点。"
+      - name: stage_name
+        description: "大会内の試合ステージ。"
+      - name: stadium_name
+        description: "試合会場名。"
+
+  - name: sal_team
+    description: "Team HubとSatelliteから最新のチーム属性を組み立てるBusiness Vaultビュー。"
+    columns:
+      - name: team_id
+        description: "StatsBombのチーム識別子。"
+      - name: team_hk
+        description: "Team Hubのハッシュキー。"
+      - name: team_name
+        description: "最新のチーム表示名。"
 
   - name: player_tournament_periods
     description: "選手ごとに大会で観測された最初と最後の試合日を集約するBusiness Vaultテーブル。"
@@ -458,9 +510,89 @@ models:
         description: "アウェイチーム名。"
       - name: away_score
         description: "アウェイチームの得点。"
+      - name: opponent_team_name
+        description: "日本代表の対戦相手名。"
+      - name: japan_goals
+        description: "日本代表の得点。"
+      - name: opponent_goals
+        description: "対戦相手の得点。"
       - name: japan_won
         description: "日本代表が勝利した試合ならtrue。引き分けはfalse。"
       - name: stage_name
         description: "大会内の試合ステージ。"
       - name: stadium_name
         description: "試合会場名。"
+
+  - name: dim_match
+    description: "試合分析用ディメンション。試合日・大会・対戦相手・ステージを1試合1行で提供する。"
+    columns:
+      - name: match_id
+        description: "StatsBombの試合識別子。Factとの結合キー。"
+      - name: match_date
+        description: "試合開催日。"
+      - name: season_name
+        description: "大会シーズン名。"
+      - name: competition_name
+        description: "大会名。"
+      - name: opponent_team_name
+        description: "日本代表の対戦相手名。"
+      - name: stage_name
+        description: "大会内の試合ステージ。"
+      - name: stadium_name
+        description: "試合会場名。"
+
+  - name: dim_team
+    description: "チーム分析用ディメンション。StatsBombのチームIDごとに1行を提供する。"
+    columns:
+      - name: team_id
+        description: "StatsBombのチーム識別子。Factとの結合キー。"
+      - name: team_name
+        description: "チーム表示名。"
+
+  - name: fct_player_match
+    description: "選手・試合・チームの組み合わせごとに1行を持つラインアップFact。player_idでdim_player、match_idでdim_match、team_idでdim_teamに結合する。"
+    columns:
+      - name: player_id
+        description: "名寄せ後の選手識別子。dim_player.player_idとの結合キー。"
+      - name: match_id
+        description: "StatsBombの試合識別子。dim_match.match_idとの結合キー。"
+      - name: team_id
+        description: "StatsBombのチーム識別子。dim_team.team_idとの結合キー。"
+      - name: position_name
+        description: "試合のラインアップに記録されたポジション。"
+      - name: jersey_number
+        description: "試合のラインアップに記録された背番号。"
+      - name: is_starter
+        description: "先発選手ならtrue。"
+      - name: lineup_record_count
+        description: "選手・試合・チームのラインアップ記録数。各行1。"
+
+  - name: fct_player_shots
+    description: "Raw Vaultの非履歴化イベントLinkから作るシュートFact。1シュートイベント1行。"
+    columns:
+      - name: shot_event_key
+        description: "シュートイベントを識別するハッシュキー。Factの粒度キー。"
+      - name: player_id
+        description: "名寄せ後の選手識別子。dim_player.player_idとの結合キー。"
+      - name: match_id
+        description: "StatsBombの試合識別子。dim_match.match_idとの結合キー。"
+      - name: team_id
+        description: "StatsBombのチーム識別子。dim_team.team_idとの結合キー。"
+      - name: period
+        description: "試合のピリオド番号。"
+      - name: minute
+        description: "イベント発生時の試合経過分。"
+      - name: second
+        description: "イベント発生時の分内秒。"
+      - name: event_timestamp
+        description: "イベント発生時刻のソース表現。"
+      - name: shot_type
+        description: "シュートの種類。"
+      - name: shot_outcome
+        description: "シュート結果。"
+      - name: shot_xg
+        description: "StatsBombが提供するシュートの期待得点値。"
+      - name: goal_count
+        description: "ゴールなら1、それ以外は0。"
+      - name: shot_count
+        description: "シュートイベント数。各行1。"

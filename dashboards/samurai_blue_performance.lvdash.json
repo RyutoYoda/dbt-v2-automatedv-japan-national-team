@@ -1,0 +1,265 @@
+{
+  "datasets": [
+    {
+      "name": "match_results",
+      "displayName": "Japan match results",
+      "queryLines": [
+        "SELECT match_id, match_date, opponent_team_name, japan_goals, opponent_goals, japan_won, stage_name FROM fct_japan_match_results"
+      ]
+    },
+    {
+      "name": "match_goals",
+      "displayName": "Goals by side and match",
+      "queryLines": [
+        "SELECT match_id, match_date, opponent_team_name, 'Japan' AS goal_side, japan_goals AS goals FROM fct_japan_match_results UNION ALL SELECT match_id, match_date, opponent_team_name, 'Opponent' AS goal_side, opponent_goals AS goals FROM fct_japan_match_results"
+      ]
+    },
+    {
+      "name": "player_match",
+      "displayName": "Player match participation",
+      "queryLines": [
+        "SELECT f.player_id, p.player_name, f.match_id, m.match_date, m.opponent_team_name, t.team_name, f.position_name, f.jersey_number, f.is_starter, f.lineup_record_count FROM fct_player_match f JOIN dim_player p ON f.player_id = p.player_id JOIN dim_match m ON f.match_id = m.match_id JOIN dim_team t ON f.team_id = t.team_id WHERE t.team_name = 'Japan'"
+      ]
+    },
+    {
+      "name": "player_shots",
+      "displayName": "Player shots",
+      "queryLines": [
+        "SELECT s.shot_event_key, s.player_id, p.player_name, s.match_id, m.match_date, m.opponent_team_name, t.team_name, s.shot_type, s.shot_outcome, s.shot_xg, s.goal_count, s.shot_count FROM fct_player_shots s LEFT JOIN dim_player p ON s.player_id = p.player_id JOIN dim_match m ON s.match_id = m.match_id JOIN dim_team t ON s.team_id = t.team_id WHERE t.team_name = 'Japan'"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "overview",
+      "displayName": "Samurai Blue 2022",
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layout": [
+        {
+          "widget": {
+            "name": "title",
+            "multilineTextboxSpec": {
+              "lines": [
+                "<span style=\"font-size: 26px;\">Samurai Blue | 2022 FIFA World Cup</span><br/><span>Match results, player participation, and shot quality</span>"
+              ]
+            }
+          },
+          "position": { "x": 0, "y": 0, "width": 12, "height": 2 }
+        },
+        {
+          "widget": {
+            "name": "match_count",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "match_results",
+                  "fields": [
+                    { "name": "matches", "expression": "COUNT(DISTINCT `match_id`)" }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": { "value": { "fieldName": "matches", "displayName": "Matches" } },
+              "frame": { "showTitle": true, "title": "Matches" }
+            }
+          },
+          "position": { "x": 0, "y": 2, "width": 3, "height": 3 }
+        },
+        {
+          "widget": {
+            "name": "win_count",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "match_results",
+                  "fields": [
+                    { "name": "wins", "expression": "SUM(CASE WHEN `japan_won` THEN 1 ELSE 0 END)" }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": { "value": { "fieldName": "wins", "displayName": "Wins" } },
+              "frame": { "showTitle": true, "title": "Japan wins" }
+            }
+          },
+          "position": { "x": 3, "y": 2, "width": 3, "height": 3 }
+        },
+        {
+          "widget": {
+            "name": "lineup_count",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "player_match",
+                  "fields": [
+                    { "name": "lineup_records", "expression": "SUM(`lineup_record_count`)" }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": { "value": { "fieldName": "lineup_records", "displayName": "Lineup records" } },
+              "frame": { "showTitle": true, "title": "Player-match records" }
+            }
+          },
+          "position": { "x": 6, "y": 2, "width": 3, "height": 3 }
+        },
+        {
+          "widget": {
+            "name": "total_xg",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "player_shots",
+                  "fields": [
+                    { "name": "xg", "expression": "SUM(`shot_xg`)" }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "widgetType": "counter",
+              "encodings": { "value": { "fieldName": "xg", "displayName": "Expected goals" } },
+              "frame": { "showTitle": true, "title": "Japan shot xG" }
+            }
+          },
+          "position": { "x": 9, "y": 2, "width": 3, "height": 3 }
+        },
+        {
+          "widget": {
+            "name": "goals_by_opponent",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "match_goals",
+                  "fields": [
+                    { "name": "opponent_team_name", "expression": "`opponent_team_name`" },
+                    { "name": "goal_side", "expression": "`goal_side`" },
+                    { "name": "sum(goals)", "expression": "SUM(`goals`)" }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": { "fieldName": "opponent_team_name", "scale": { "type": "categorical" } },
+                "y": { "fieldName": "sum(goals)", "scale": { "type": "quantitative" } },
+                "color": { "fieldName": "goal_side", "scale": { "type": "categorical" } }
+              },
+              "frame": { "showTitle": true, "title": "Japan and opponent goals by match" }
+            }
+          },
+          "position": { "x": 0, "y": 5, "width": 6, "height": 7 }
+        },
+        {
+          "widget": {
+            "name": "appearances_by_player",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "player_match",
+                  "fields": [
+                    { "name": "player_name", "expression": "`player_name`" },
+                    { "name": "sum(lineup_record_count)", "expression": "SUM(`lineup_record_count`)" }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": { "fieldName": "player_name", "scale": { "type": "categorical", "sort": { "by": "y-reversed" } } },
+                "y": { "fieldName": "sum(lineup_record_count)", "scale": { "type": "quantitative" } },
+                "label": { "show": true }
+              },
+              "frame": { "showTitle": true, "title": "Lineup records by player" }
+            }
+          },
+          "position": { "x": 6, "y": 5, "width": 6, "height": 7 }
+        },
+        {
+          "widget": {
+            "name": "xg_by_player",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "player_shots",
+                  "fields": [
+                    { "name": "player_name", "expression": "`player_name`" },
+                    { "name": "sum(shot_xg)", "expression": "SUM(`shot_xg`)" }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": { "fieldName": "player_name", "scale": { "type": "categorical", "sort": { "by": "y-reversed" } } },
+                "y": { "fieldName": "sum(shot_xg)", "scale": { "type": "quantitative" } },
+                "label": { "show": true }
+              },
+              "frame": { "showTitle": true, "title": "Expected goals by player" }
+            }
+          },
+          "position": { "x": 0, "y": 12, "width": 6, "height": 7 }
+        },
+        {
+          "widget": {
+            "name": "shots_by_outcome",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "player_shots",
+                  "fields": [
+                    { "name": "shot_outcome", "expression": "`shot_outcome`" },
+                    { "name": "shots", "expression": "SUM(`shot_count`)" }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": { "fieldName": "shot_outcome", "scale": { "type": "categorical" } },
+                "y": { "fieldName": "shots", "scale": { "type": "quantitative" } },
+                "label": { "show": true }
+              },
+              "frame": { "showTitle": true, "title": "Shot outcomes" }
+            }
+          },
+          "position": { "x": 6, "y": 12, "width": 6, "height": 7 }
+        }
+      ]
+    }
+  ]
+}

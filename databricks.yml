@@ -1,0 +1,23 @@
+bundle:
+  name: dbt-vault-dashboard-demo
+
+variables:
+  warehouse_id:
+    description: Databricks SQL warehouse ID used by the dashboard.
+  catalog_name:
+    description: Unity Catalog catalog containing the dbt models.
+  marts_schema:
+    description: Schema containing the dbt marts, usually DBT_VAULT_TRAINING_MARTS.
+
+resources:
+  dashboards:
+    samurai_blue_performance:
+      display_name: Samurai Blue 2022 - Data Vault to Dashboard
+      file_path: dashboards/samurai_blue_performance.lvdash.json
+      warehouse_id: ${var.warehouse_id}
+      dataset_catalog: ${var.catalog_name}
+      dataset_schema: ${var.marts_schema}
+
+targets:
+  dev:
+    mode: development
